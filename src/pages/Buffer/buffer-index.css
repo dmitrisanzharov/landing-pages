@@ -1,0 +1,106 @@
+.drr {
+  border: 2px solid red;
+}
+
+.dbb {
+  border: 2px solid blue;
+}
+
+.dgg {
+  border: 2px solid green;
+}
+
+.ddd, .bufferHeader, .bufferHeader-is-active, .bufferHeader-at-top {
+  border: 2px solid black;
+}
+
+.topBlueBanner {
+  background-color: rgb(107, 129, 255);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.bannerContainer {
+  padding: 10px 16px;
+}
+
+.marginSides {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.FindOutMoreLink {
+  color: white;
+}
+
+.bufferHeader, .bufferHeader-is-active, .bufferHeader-at-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  max-width: 1248px;
+  padding: 20px;
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  transition: transform 350ms ease-out 0s, box-shadow 350ms ease-out 0s;
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-118px);
+  box-shadow: none;
+}
+
+.bufferHeader-at-top {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+.bufferHeader-is-active {
+  transform: translateY(0px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+}
+
+.dropDownMenu {
+  font-size: 18px;
+  color: rgb(35, 31, 32);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  margin: 0px 10px;
+  padding: 0px 4px;
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.navSpan {
+  padding: 40px;
+  position: relative;
+}
+
+.navSpan:hover {
+  color: rgb(44, 75, 255);
+}
+
+@media (max-width: 1300px) {
+  .navSpan {
+    padding: 20px;
+  }
+}
+.navBlueLineHover {
+  border-bottom: 0px solid rgb(44, 75, 255);
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  display: block;
+  left: calc(50% - 10px);
+  top: 70%;
+  transition: 0.1s ease-out;
+}
+
+.navSpan:hover > .navBlueLineHover {
+  height: 5px;
+  border-bottom: 5px solid rgb(44, 75, 255);
+  width: 20px;
+}/*# sourceMappingURL=buffer-index.css.map */

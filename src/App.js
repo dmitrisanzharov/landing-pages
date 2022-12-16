@@ -4,7 +4,7 @@ import './App.css';
 
 // Pages
 import Home from './pages/Home/Home';
-import Buffer from './pages/Buffer/index.js';
+import Buffer from './pages/Buffer/buffer-index.js';
 
 
 function App() {
