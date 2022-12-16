@@ -1,0 +1,36 @@
+.topBlueBanner {
+  background-color: rgb(107, 129, 255);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.bannerContainer {
+  padding: 10px 16px;
+}
+
+.marginSides {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  max-width: 1248px;
+  padding: 20px;
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  transition: transform 350ms ease-out 0s, box-shadow 350ms ease-out 0s;
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-118px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+}/*# sourceMappingURL=index.css.map */
