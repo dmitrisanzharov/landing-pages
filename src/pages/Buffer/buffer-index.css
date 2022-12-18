@@ -14,6 +14,12 @@
   border: 2px solid black;
 }
 
+.container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .topBlueBanner {
   background-color: rgb(107, 129, 255);
   color: white;
@@ -74,6 +80,28 @@
   cursor: pointer;
 }
 
+@media (max-width: 1210px) {
+  .dropDownMenu {
+    display: none;
+  }
+}
+.bi-chevron-down {
+  margin-left: 5px;
+}
+
+.hamIcon {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 2em;
+  position: relative;
+  top: 5px;
+}
+
+@media (min-width: 1210px) {
+  .hamIcon {
+    display: none;
+  }
+}
 .navSpan {
   padding: 40px;
   position: relative;
@@ -103,4 +131,55 @@
   height: 5px;
   border-bottom: 5px solid rgb(44, 75, 255);
   width: 20px;
+}
+
+.logInSpanNav {
+  color: rgb(44, 75, 255);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.logInSpanNav:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 660px) {
+  .logInSpanNav {
+    display: none;
+  }
+}
+.blueStandardButton, .blueStandardButtonMobile {
+  background-color: rgb(44, 75, 255);
+  color: white;
+  padding: 15px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 660px) {
+  .blueStandardButtonMobile {
+    padding: 10px 10px;
+  }
+}
+.blueStandardButton:hover, .blueStandardButtonMobile:hover {
+  background-color: darkblue;
+}
+
+@media all and (min-width: 800px) {
+  .test1 > h1 {
+    color: red;
+  }
+}
+.navPopUpMenuTools {
+  display: none;
+  position: absolute;
+  width: 286px;
+  z-index: 999px;
+  background-color: white;
+}
+
+.navTools:hover > .navPopUpMenuTools {
+  display: inline;
 }/*# sourceMappingURL=buffer-index.css.map */
