@@ -20,6 +20,7 @@ $button-blue: rgb(44, 75, 255);
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .topBlueBanner {
@@ -79,7 +80,6 @@ $button-blue: rgb(44, 75, 255);
 	font-size: 18px;
 	color: rgb(35, 31, 32);
 	text-decoration: none;
-	font-family: Roboto, sans-serif;
 	font-weight: 400;
 	margin: 0px 10px;
 	padding: 0px 4px;
@@ -188,19 +188,4 @@ $button-blue: rgb(44, 75, 255);
 	.test1 > h1 {
 		color: red;
 	}
-}
-
-.navTools {
-}
-
-.navPopUpMenuTools {
-	display: none;
-	position: absolute;
-	width: 286px;
-	z-index: 999px;
-	background-color: white;
-}
-
-.navTools:hover > .navPopUpMenuTools {
-	display: inline;
 }

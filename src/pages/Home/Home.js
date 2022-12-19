@@ -8,6 +8,12 @@ export default function Home() {
             <h1>All landing pages</h1>
             <ul>
                 <li>
+                    <Link to='/component-development-page'>
+                        component development page
+                    </Link>
+                </li>
+                <hr />
+                <li>
                     <Link to='/buffer'>
                         Buffer
                     </Link>

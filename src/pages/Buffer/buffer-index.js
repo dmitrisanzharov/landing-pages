@@ -46,14 +46,19 @@ export default function Buffer() {
 
 
                 <div className="dropDownMenu">
+
+
+                    {/* TOOLS */}
                     <span className='navSpan navTools'>
                         Tools
                         <i className="bi bi-chevron-down"></i>
                         <span className='navBlueLineHover'></span>
-                        <div className="navPopUpMenuTools drr">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reiciendis unde a laboriosam eaque maiores possimus distinctio nesciunt molestiae, sed est quibusdam quia voluptate molestias ut iusto dolore impedit ea suscipit atque, sequi consectetur quaerat similique! Dolorem, culpa quidem placeat itaque neque quibusdam voluptatibus numquam fugiat commodi! Minima repellendus fugiat adipisci voluptate deleniti sit reprehenderit ullam dolorum veniam omnis voluptatum esse sapiente cum blanditiis tenetur distinctio labore exercitationem placeat sequi, dolorem accusantium, eaque ipsam? Eos dolorem necessitatibus voluptates tempora alias aspernatur autem enim voluptatibus, cumque repellendus sunt, sint consectetur, laboriosam quia nemo maxime reiciendis. Atque saepe labore consectetur minima consequatur.
-                        </div>
+
                     </span>
+
+
+
+                    {/* CHANNELS */}
                     <span className='navSpan'>
                         Channels
                         <i className="bi bi-chevron-down"></i>

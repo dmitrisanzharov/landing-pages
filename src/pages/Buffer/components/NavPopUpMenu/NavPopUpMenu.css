@@ -1,0 +1,40 @@
+.navPopUpMenu {
+  background-color: white;
+  top: 100px;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  box-shadow: rgba(35, 31, 32, 0.2) 0px 0px 20px;
+  transition: 0.25s ease;
+  overflow: hidden;
+  width: 286px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navInternalMenuBox {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 8px;
+  transition: background-color 200ms ease-out 0s;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.navInternalMenuBox:hover {
+  background-color: rgb(245, 245, 245);
+  outline: rgb(66, 153, 225) solid 1px !important;
+}
+
+.iconHolderInnerNav {
+  position: relative;
+  top: 20px;
+}/*# sourceMappingURL=NavPopUpMenu.css.map */

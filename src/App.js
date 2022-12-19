@@ -5,6 +5,7 @@ import './App.css';
 // Pages
 import Home from './pages/Home/Home';
 import Buffer from './pages/Buffer/buffer-index.js';
+import ComponentDevelopmentPage from './pages/ComponentDevelopmentPage/ComponentDevelopmentPage'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 
           {/* PAGES */}
           <Route exact path='/buffer' element={<Buffer />} />
+          <Route exact path='/component-development-page' element={<ComponentDevelopmentPage />} />
         </Routes>
       </Router>
     </>

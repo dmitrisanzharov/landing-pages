@@ -18,6 +18,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .topBlueBanner {
@@ -71,7 +72,6 @@
   font-size: 18px;
   color: rgb(35, 31, 32);
   text-decoration: none;
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   margin: 0px 10px;
   padding: 0px 4px;
@@ -171,15 +171,4 @@
   .test1 > h1 {
     color: red;
   }
-}
-.navPopUpMenuTools {
-  display: none;
-  position: absolute;
-  width: 286px;
-  z-index: 999px;
-  background-color: white;
-}
-
-.navTools:hover > .navPopUpMenuTools {
-  display: inline;
 }/*# sourceMappingURL=buffer-index.css.map */
