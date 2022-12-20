@@ -1,42 +1,27 @@
 import React from 'react'
 
-// import
+// import components
 import NavPopUpMenu from '../Buffer/components/NavPopUpMenu/NavPopUpMenu';
+import NavSideMiniMenu from '../Buffer/components/NavSideMiniMenu/NavSideMiniMenu.js';
+
+
+// import view
+import { navToolsItems } from '../Buffer/view/navToolsMenuItems';
+
+
 
 function ComponentDevelopmentPage() {
 
-    const obj = [
-        {
-            iconClass: "bi bi-send",
-            title: 'Publishing',
-            text: 'Plan, collaborate, and publish thumb-stopping content'
-        },
-        {
-            iconClass: "bi bi-bar-chart-line",
-            title: 'Analytics',
-            text: 'Analyze social media performance and create reports'
-        },
-        {
-            iconClass: "bi bi-chat-left-dots",
-            title: 'Engagement',
-            text: 'Quickly navigate your comments and engage with your audience'
-        },
-        {
-            iconClass: "bi bi-vector-pen",
-            title: 'Start Page',
-            text: 'Build custom landing page in minutes'
-        },
-
-    ]
 
 
 
     return (
-        <div style={{ padding: '60px' }}>
+        <div style={{ padding: '60px', border: '1px solid' }}>
             <h1>Component Development Page</h1>
             <hr />
 
-            <NavPopUpMenu items={obj} />
+            {/* <NavPopUpMenu items={navToolsItems} /> */}
+            <NavSideMiniMenu  />
 
 
             {/* end of main div */}

@@ -2,7 +2,7 @@
   background-color: white;
   top: 100px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   color: black;
   box-shadow: rgba(35, 31, 32, 0.2) 0px 0px 20px;
   transition: 0.25s ease;
@@ -17,16 +17,16 @@
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  padding: 16px;
+  padding: 6px;
   border-radius: 8px;
   transition: background-color 200ms ease-out 0s;
   margin: 0px;
-  margin-bottom: 20px;
   font-size: 1rem;
   color: black;
   text-decoration: none;
   letter-spacing: 0.5px;
   width: 100%;
+  cursor: pointer;
 }
 
 .navInternalMenuBox:hover {

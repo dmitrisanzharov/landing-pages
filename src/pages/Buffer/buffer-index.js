@@ -4,12 +4,23 @@ import bufferLogo from './images/BufferLogo.png';
 
 // components
 import ButtonNewSmall from './components/ButtonNewSmall/ButtonNewSmall'
+import NavPopUpMenu from './components/NavPopUpMenu/NavPopUpMenu';
+
+
+// view objects
+import { navToolsItems } from './view/navToolsMenuItems';
+import {navChannelsItems} from './view/navChannelsMenuItems';
+
+
+
 
 export default function Buffer() {
 
+
+
     const [scrollPositionState, setScrollPositionState] = useState(0);
 
-
+    
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
         setScrollPositionState(scrollPosition)
@@ -53,21 +64,32 @@ export default function Buffer() {
                         Tools
                         <i className="bi bi-chevron-down"></i>
                         <span className='navBlueLineHover'></span>
-
+                        <div className='navItemsDropDownHolderDiv'>
+                            <NavPopUpMenu items={navToolsItems} />
+                        </div>
                     </span>
 
 
 
                     {/* CHANNELS */}
-                    <span className='navSpan'>
+                    <span className='navSpan navTools'>
                         Channels
                         <i className="bi bi-chevron-down"></i>
                         <span className='navBlueLineHover'></span>
+                        <div className='navItemsDropDownHolderDiv'>
+                            <NavPopUpMenu items={navChannelsItems} />
+                        </div>
                     </span>
+
+
+                           {/* Pricing */}
                     <span className='navSpan'>
                         Pricing
                         <span className='navBlueLineHover'></span>
                     </span>
+
+
+                    {/* Blog */}
                     <span className='navSpan'>
                         Blog
                         <span className='navBlueLineHover'></span>

@@ -1,0 +1,21 @@
+.NavSideMiniMenu_Container{
+    padding: 10px;
+}
+
+.NavSideMiniMenu_Logo_n_close{
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavSideMiniMenu_x_logo_holder{
+    font-size: 2em;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+.NavSideMiniMenu_nav_items_n_button{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}

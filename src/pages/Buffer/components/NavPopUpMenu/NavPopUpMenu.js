@@ -14,8 +14,11 @@ function NavPopUpMenu({ items }) {
                         <div className='iconHolderInnerNav'>
                             <i className={iconClass}></i>
                         </div>
-                        <h3>{title}</h3>
-                        {text && <div>{text}</div>}
+                        <div>
+                            <h3>{title}</h3>
+                            {text && <div>{text}</div>}
+                        </div>
+
                     </div>
                 )
             })}
