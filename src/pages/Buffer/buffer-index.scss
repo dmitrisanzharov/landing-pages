@@ -7,6 +7,10 @@ $button-blue: rgb(44, 75, 255);
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+// -----------------------------------------------
+// TOP BLUE BANNER STYLING
+// -----------------------------------------------
+
 .topBlueBanner {
 	background-color: rgb(107, 129, 255);
 	color: white;
@@ -27,7 +31,9 @@ $button-blue: rgb(44, 75, 255);
 	color: white;
 }
 
-// HEADER / NAVBAR
+// -----------------------------------------------
+// NAVBAR STYLING
+// -----------------------------------------------
 
 .bufferHeader {
 	display: flex;
@@ -177,14 +183,238 @@ $button-blue: rgb(44, 75, 255);
 	position: absolute;
 	top: 100px;
 	overflow: hidden;
-	transform: scaleY(0);    
+	transform: scaleY(0);
 	transform-origin: top;
 	transition: transform 0.26s ease;
 	box-shadow: rgba(35, 31, 32, 0.2) 0px 0px 20px;
 }
 
 .navTools:hover > .navItemsDropDownHolderDiv {
-	transform: scaleY(1); 
-	
+	transform: scaleY(1);
 }
 
+.Buffer_index_mini_popup_navbar_container {
+	position: absolute;
+	right: 0;
+	z-index: 10000;
+	background-color: white;
+	top: -59px;
+	width: 0%;
+	height: 100vh;
+	transition: 0.5s ease;
+	overflow-x: hidden;
+}
+
+.Buffer_index_mini_popup_navbar_container_active {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.buffer_index_hide_scroll {
+	max-height: 100vh;
+	overflow: hidden;
+}
+
+// -----------------------------------------------
+// HAPPY PERSON STYLING
+// -----------------------------------------------
+
+.Buffer_index_happy_container {
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	max-width: 1186px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.Buffer_index_happy_container_inner {
+	display: flex;
+}
+
+.Buffer_index_happy_container_inner_box1_text {
+	width: 50%;
+	height: 400px;
+	padding-right: 30px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+@media all and (max-width: 900px) {
+	.Buffer_index_happy_container_inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Buffer_index_happy_container_inner_box1_text {
+		width: 100%;
+	}
+}
+
+.Buffer_index_happy_container_inner_box1_text_mini_container {
+}
+
+// HEADING
+
+.Buffer_index_happy_container_inner_box1_text_mini_container_heading {
+	font-size: 48px;
+	line-height: 64px;
+	text-align: left;
+	letter-spacing: 0.1px;
+	font-weight: bold;
+	margin: 0px 0px 1.875rem;
+}
+
+@media all and (max-width: 900px) {
+	.Buffer_index_happy_container_inner_box1_text_mini_container_heading {
+		text-align: center;
+	}
+}
+
+// PARAGRAPH
+
+.Buffer_index_happy_container_inner_box1_text_mini_container_paragraph {
+	margin-bottom: 2.3em;
+	font-size: 1.225rem;
+	line-height: 1.9;
+	margin: 0px 0px 2.25rem;
+	text-align: left;
+	letter-spacing: 0.1px;
+}
+
+@media all and (max-width: 900px) {
+	.Buffer_index_happy_container_inner_box1_text_mini_container_paragraph {
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 1450px) {
+	.Buffer_index_happy_container_inner_box1_text_mini_container_heading {
+		font-size: calc(1.375rem + (1vw - 3.75px) * 1.6901);
+		line-height: calc(2rem + (1vw - 3.75px) * 2.2535);
+	}
+
+	.Buffer_index_happy_container_inner_box1_text_mini_container_paragraph {
+		font-size: calc(0.5rem + (1vw - 3.75px) * 1.6901);
+		line-height: calc(0.7rem + (1vw - 3.75px) * 2.2535);
+	}
+}
+
+@media all and (max-width: 700px) {
+	.Buffer_index_happy_container_inner_box1_text_mini_container_paragraph {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.Buffer_index_happy_container_inner_box1_text_mini_container_paragraph {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+// BUTTON HOLDER CONTAINER
+
+.Buffer_index_happy_container_inner_box1_text_mini_container_button_holder {
+	display: flex;
+}
+
+@media all and (max-width: 900px) {
+	.Buffer_index_happy_container_inner_box1_text_mini_container_button_holder {
+		flex-direction: column;
+	}
+}
+
+// BLUE BUTTON
+.Buffer_index_happy_container_inner_box1_text_mini_container_button_holder_blue_button {
+	margin-right: 20px;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	line-height: 2.6;
+	font-weight: 400;
+	border-radius: 5px;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+	transition-duration: 0.1s;
+	height: 48px;
+	padding: 0px 24px;
+	background-color: rgb(44, 75, 255);
+	color: rgb(255, 255, 255);
+}
+
+.Buffer_index_happy_container_inner_box1_text_mini_container_button_holder_blue_button:hover {
+	background-color: rgb(31, 53, 179);
+	transition-property: background-color, border-color, color;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+}
+
+@media all and (max-width: 900px) {
+	.Buffer_index_happy_container_inner_box1_text_mini_container_button_holder_blue_button {
+		max-width: 180px;
+		margin-bottom: 15px;
+		align-self: center;
+	}
+}
+
+// WHITE BUTTON
+
+.Buffer_index_happy_container_inner_box1_text_mini_container_button_holder_white_button {
+	margin-right: 20px;
+	font-size: 18px;
+	outline: none;
+	line-height: 2.6;
+	font-weight: 400;
+	border-radius: 5px;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+	transition-duration: 0.1s;
+	height: 48px;
+	padding: 0px 24px;
+	border: 2px solid rgb(44, 75, 255);
+	background-color: transparent;
+	color: rgb(44, 75, 255);
+	overflow: hidden;
+}
+
+.Buffer_index_happy_container_inner_box1_text_mini_container_button_holder_white_button:hover {
+	transition-property: background-color, border-color, color;
+	transition-duration: 0.1s;
+	transition-timing-function: ease-in;
+	background-color: lightblue;
+}
+
+@media all and (max-width: 900px) {
+	.Buffer_index_happy_container_inner_box1_text_mini_container_button_holder_white_button {
+		min-width: 180px;
+		align-self: center;
+	}
+}
+
+// IMAGE
+
+.Buffer_index_happy_container_inner_box2_image {
+	width: 50%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media all and (max-width: 900px) {
+	.Buffer_index_happy_container_inner_box2_image {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.Buffer_index_happy_container_inner_box2_image_holder_div {
+	max-width: 100%;
+	aspect-ratio: 745/768;
+	height: 100%;
+}

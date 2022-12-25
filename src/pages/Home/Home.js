@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
-        <div className='container'>
+        <div className='containerHome'>
             <h1>All landing pages</h1>
             <ul>
                 <li>

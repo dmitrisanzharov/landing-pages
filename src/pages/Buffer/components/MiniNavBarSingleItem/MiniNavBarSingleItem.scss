@@ -1,0 +1,52 @@
+.MiniNavBarSingleItem_container{
+    cursor: pointer;
+}
+
+.MiniNavBarSingleItem_container:hover{
+    text-decoration: underline;
+}
+
+.MiniNavBarSingleItem_heading{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.MiniNavBarSingleItem_chevron{
+    transition: .5s ease;
+    display: inline-block;
+}
+
+.MiniNavBarSingleItem_chevron_rotate{
+    transform: rotate(-90deg);
+}
+
+.MiniNavBarSingleItem_roll_out_container{
+    padding: 5px;
+}
+
+.noTextDecoration{
+    text-decoration:none;
+    display:inline-block;
+}
+
+.spanIcon{
+    margin-right: 10px;
+}
+
+.titleHover{
+    border-bottom: solid 1px transparent;
+}
+
+.titleHover:hover{
+    border-bottom: 1px solid black;
+}
+
+.MiniNavBarSingleItem_bottom_separator{
+    margin-bottom: 15px;
+}
+
+.blueText{
+    color: blue !important;
+}
+
+
