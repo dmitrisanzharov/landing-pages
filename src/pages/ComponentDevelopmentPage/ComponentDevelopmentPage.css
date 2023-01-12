@@ -1,10 +1,35 @@
-.test1 {
-  direction: rtl;
-  transition: 2s ease;
-  border: 1px solid;
-  width: 50%;
+.DevNavBar {
+  padding: 40px;
+}
+
+.DevNavBar_Item1 {
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+}
+
+.DevNavBar_Item1:hover {
+  color: red;
+}
+
+.DevNavBar_Item1_HiddenMenu {
+  display: none;
   position: absolute;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
+  padding: 10px;
+  background-color: white;
+  z-index: 10;
+  left: 0;
+  top: 70px;
+}
+
+.DevNavBar_Item1:focus {
+  color: red;
+}
+
+.DevNavBar_Item1:focus-within .DevNavBar_Item1_HiddenMenu {
+  display: block;
+  color: black;
 }/*# sourceMappingURL=ComponentDevelopmentPage.css.map */

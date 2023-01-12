@@ -9,7 +9,7 @@ import { navToolsItems } from '../../view/navToolsMenuItems';
 import { navChannelsItems } from '../../view/navChannelsMenuItems';
 
 
-const NavSideMiniMenu = ({ handleMiniNavBarOpen }) => {
+const NavSideMiniMenu = ({ handleMiniNavBarOpen, scrollIntoView }) => {
 
 
     function objectForMiniNavBarSingleItemDropDownProps(name) {
@@ -28,9 +28,12 @@ const NavSideMiniMenu = ({ handleMiniNavBarOpen }) => {
     return (
         <div className='NavSideMiniMenu_Container'>
             <div className='NavSideMiniMenu_Logo_n_close'>
-                <img src={bufferLogo} alt="" />
+                <img src={bufferLogo} alt="buffer logo" />
                 <div className='NavSideMiniMenu_x_logo_holder'>
-                    <i className="bi bi-x-circle" onClick={handleMiniNavBarOpen}></i>
+                    <i className="bi bi-x-circle" onClick={() => {
+                        handleMiniNavBarOpen();
+                        scrollIntoView();
+                    }}></i>
                 </div>
             </div>
 

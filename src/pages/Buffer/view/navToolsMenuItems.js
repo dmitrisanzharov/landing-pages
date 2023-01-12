@@ -17,7 +17,8 @@ export const navToolsItems = [
     {
         iconClass: "bi bi-vector-pen",
         title: 'Start Page',
-        text: 'Build custom landing page in minutes'
+        text: 'Build custom landing page in minutes',
+        isNew: true
     },
 
 ]

@@ -1,0 +1,57 @@
+.TestimonialBox_Container {
+	height: 400px;
+	width: 380px;
+}
+
+// image holder
+.TestimonialBox_Container_ImageHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//image
+.TestimonialBox_Container_ImageHolder_Image {
+	height: 110px;
+	width: 110px;
+	border-radius: 50%;
+}
+
+// text holder
+.TestimonialBox_Container_TextHolder {
+	width: 340px;
+	margin: -55px auto 0 auto;
+	height: 325px;
+	box-sizing: border-box;
+	padding: 55px 35px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.TestimonialBox_Container_TextHolder_Quote {
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 20px;
+	width: 265px;
+	height: 85px;
+	word-wrap: break-word;
+}
+
+.TestimonialBox_Container_TextHolder_LogoHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	width: 265px;
+	height: 35px;
+}
+
+.TestimonialBox_Container_TextHolder_NameAndTitle {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 20px;
+}
