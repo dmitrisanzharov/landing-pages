@@ -1047,13 +1047,11 @@
 @media all and (max-width: 1200px) {
   .BufferIndex_SectionSeparator {
     height: 70px;
-    background-color: yellow;
   }
 }
 @media all and (max-width: 992px) {
   .BufferIndex_SectionSeparator {
     height: 50px;
-    background-color: yellow;
   }
 }
 .BufferIndex_FooterContainer {

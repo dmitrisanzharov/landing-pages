@@ -1,0 +1,41 @@
+.IndependentIEIndexContainer_FourBoxesSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IndependentIEIndexContainer_FourBoxesSection_Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 22px;
+}
+
+.IndependentIEIndexContainer_FourBoxesSection_Container_SingleItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  cursor: pointer;
+}
+
+.IndependentIEIndexContainer_FourBoxesSection_Container_SingleItem_Image {
+  position: relative;
+}
+
+.IndependentIEIndexContainer_FourBoxesSection_Container_SingleItem_Text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.IndependentIEIndexContainer_FourBoxesSection_Container_SingleItem_Text_CategoryAndPremium {
+  display: flex;
+  -moz-column-gap: 11px;
+       column-gap: 11px;
+}
+
+@media all and (max-width: 1023px) {
+  .IndependentIEIndexContainer_FourBoxesSection_Container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 22px;
+  }
+}/*# sourceMappingURL=FourBoxes.css.map */

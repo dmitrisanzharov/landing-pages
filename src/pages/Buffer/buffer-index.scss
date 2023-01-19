@@ -586,8 +586,6 @@ $button-blue: rgb(44, 75, 255);
 	overflow: hidden;
 }
 
-// bootstrap media querie
-
 @media all and (min-width: 1200px) {
 	.Buffer_index_1234Container {
 		height: 270px;
@@ -1202,14 +1200,12 @@ $button-blue: rgb(44, 75, 255);
 @media all and (max-width: 1200px) {
 	.BufferIndex_SectionSeparator {
 		height: 70px;
-		background-color: yellow;
 	}
 }
 
 @media all and (max-width: 992px) {
 	.BufferIndex_SectionSeparator {
 		height: 50px;
-		background-color: yellow;
 	}
 }
 

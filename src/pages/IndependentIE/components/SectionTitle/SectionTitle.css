@@ -1,0 +1,30 @@
+.IndependentIE_SectionTitleContainer {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  transition: color 0.5s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.IndependentIE_SectionTitleContainer--WhiteColor {
+  color: white;
+}
+
+.IndependentIE_SectionTitleContainer:hover {
+  color: gray;
+}
+
+.IndependentIE_SectionTitleContainer_Title {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.IndependentIE_SectionTitleContainer_More {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}/*# sourceMappingURL=SectionTitle.css.map */

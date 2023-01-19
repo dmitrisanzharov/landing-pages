@@ -1,35 +1,27 @@
-.DevNavBar {
-  padding: 40px;
+.BlahDiv > input {
+  outline: none;
 }
 
-.DevNavBar_Item1 {
-  padding: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-  position: relative;
-}
-
-.DevNavBar_Item1:hover {
+.BlahDiv > input::-moz-placeholder {
   color: red;
 }
 
-.DevNavBar_Item1_HiddenMenu {
-  display: none;
-  position: absolute;
-  padding: 10px;
-  background-color: white;
-  z-index: 10;
-  left: 0;
-  top: 70px;
-}
-
-.DevNavBar_Item1:focus {
+.BlahDiv > input:-ms-input-placeholder {
   color: red;
 }
 
-.DevNavBar_Item1:focus-within .DevNavBar_Item1_HiddenMenu {
-  display: block;
-  color: black;
+.BlahDiv > input::placeholder {
+  color: red;
+}
+
+.BlahDiv > input:focus::-moz-placeholder {
+  color: green;
+}
+
+.BlahDiv > input:focus:-ms-input-placeholder {
+  color: green;
+}
+
+.BlahDiv > input:focus::placeholder {
+  color: green;
 }/*# sourceMappingURL=ComponentDevelopmentPage.css.map */

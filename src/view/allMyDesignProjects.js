@@ -5,6 +5,16 @@ import finLendersPic from "../images/finLendersPic.avif";
 
 const allMyDesignProjects = [
 	{
+		name: "Independent.ie",
+		link: "/independent-ie",
+		image: null,
+		dateStarted: "13-Jan-2023",
+		dateFinished: "to do",
+		numberOfActivePages: 1,
+		highlights: ["todo"],
+		pagePerformance: ["todo"],
+	},
+	{
 		name: "Buffer",
 		link: "/buffer",
 		image: bufferPic,
@@ -18,10 +28,10 @@ const allMyDesignProjects = [
 			"rolling testimonials",
 		],
 		pagePerformance: [
-			"page loads 0.94 seconds faster",
-			"Lighthouse performance is up by +17 points",
-			"Lighthouse accessibility is up +5 points",
-			"Lighthouse seo is up +8",
+			"page loads 232% seconds faster",
+			"Lighthouse performance is up by 45%",
+			"Lighthouse accessibility is up by 5%",
+			"Lighthouse seo is up by 9%",
 		],
 	},
 	{

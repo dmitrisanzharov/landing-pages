@@ -1,0 +1,381 @@
+.IndependentIEIndexContainer > * {
+	box-sizing: border-box;
+}
+
+//********************************************************************
+//          Search Bar Section
+// *******************************************************************
+.IndependentIEIndexContainer_SearchBarSection {
+	background-color: lightgray;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container {
+	max-width: 985px;
+	min-height: 52px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox {
+	display: flex;
+	position: relative;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox {
+	min-width: 50px;
+	position: relative;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox
+	> input {
+	outline: none;
+	border: none;
+	background-color: lightgray;
+	width: 50px;
+	position: absolute;
+	top: 5px;
+	border-bottom: 1px solid lightgray;
+	transition: width 1s ease;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox
+	> input:focus {
+	outline: none;
+	border: none;
+	background-color: lightgray;
+	width: 150px;
+	border-bottom: 1px solid black;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox
+	> input:focus::placeholder {
+	color: gray;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox
+	> input::placeholder {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_IconBox {
+	position: absolute;
+	left: 50px;
+	transition: left 1s ease;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox:focus-within
+	~ .IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_IconBox {
+	left: 150px;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_TimeNTempBox {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	color: gray;
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_TimeNTempBox_City {
+	color: black;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SubNLoginBox {
+	display: flex;
+	column-gap: 10px;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SubNLoginBox_SubscribeButton {
+	width: 90px;
+	height: 32px;
+	padding: 15px 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SubNLoginBox_LoginButton {
+	width: 90px;
+	height: 32px;
+	padding: 15px 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 7px;
+	background-color: lightgray;
+	color: black;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.IndependentIEIndexContainer_SearchBarSection_Container_SubNLoginBox_SubscribeButton:hover,
+.IndependentIEIndexContainer_SearchBarSection_Container_SubNLoginBox_LoginButton:hover {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+// bootstrap media queries
+@media all and (max-width: 992px) {
+	.IndependentIEIndexContainer_SearchBarSection {
+		display: none;
+	}
+}
+
+//********************************************************************
+//         MAIN LOGO LOGO SECTION
+// *******************************************************************
+.IndependentIEIndexContainer_MainLogoSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	margin: 15px 0px 10px;
+	font-size: 62px;
+	line-height: 62px;
+	font-weight: 700;
+	position: relative;
+}
+
+.IndependentIEIndexContainer_MainLogoSection > img {
+	width: 50px !important;
+}
+
+// bootstrap media queries
+@media all and (max-width: 992px) {
+	.IndependentIEIndexContainer_MainLogoSection {
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.IndependentIEIndexContainer_MainLogoSection > img {
+		width: 40px !important;
+	}
+}
+
+// SubNLogin Box
+
+.IndependentIEIndexContainer_MainLogoSection_SubNLogInBox {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	display: none;
+	cursor: pointer;
+}
+
+// bootstrap media queries
+@media all and (max-width: 992px) {
+	.IndependentIEIndexContainer_MainLogoSection_SubNLogInBox {
+		display: flex;
+		column-gap: 5px;
+		align-items: baseline;
+		position: absolute;
+		right: 10px;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.IndependentIEIndexContainer_MainLogoSection_SubNLogInBox {
+		right: auto;
+		top: -15px;
+	}
+}
+
+@media all and (min-width: 0px) {
+	// check mobile responsiveness, and overall 'blind spots'
+}
+
+//********************************************************************
+//        Nav Bar Section
+// *******************************************************************
+.IndependentIEIndexContainer_NavBar {
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.IndependentIEIndexContainer_NavBar_NavItems {
+	display: flex;
+	padding: 0px 10px;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 25px;
+}
+
+.IndependentIEIndexContainer_NavBar_NavItems_SingleItem {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	cursor: pointer;
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 3px solid transparent;
+}
+
+.IndependentIEIndexContainer_NavBar_NavItems_SingleItem:hover {
+	transition: border-bottom 0.5s ease;
+	border-bottom: 3px solid;
+}
+
+// sections dropdown
+.IndependentIEIndexContainer_NavBar_SectionsDropDown {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@extend .IndependentIEIndexContainer_NavBar_NavItems_SingleItem;
+	column-gap: 3px;
+}
+
+// bootstrap media queries
+@media all and (max-width: 768px) {
+	.IndependentIEIndexContainer_NavBar_NavItems {
+		column-gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: auto;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.IndependentIEIndexContainer_NavBar_NavItems {
+		// max-width: 510px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+// open all section Toggle
+.IndependentIEIndexContainer_NavBar_SearchBox {
+	height: 42px;
+	width: 676px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px;
+}
+
+.IndependentIEIndexContainer_NavBar_SearchBox_Input > input {
+	border: none;
+	border-bottom: 1px solid;
+	width: 620px;
+	outline: none;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.IndependentIEIndexContainer_NavBar_SearchBox_Input > input::placeholder {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+// bootstrap media queries
+@media all and (max-width: 768px) {
+	.IndependentIEIndexContainer_NavBar {
+		width: fit-content;
+	}
+
+	.IndependentIEIndexContainer_NavBar_SearchBox {
+		width: 80vw;
+	}
+
+	.IndependentIEIndexContainer_NavBar_SearchBox_Input {
+		width: 95%;
+	}
+
+	.IndependentIEIndexContainer_NavBar_SearchBox_Input > input {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.IndependentIEIndexContainer_NavBar_SearchBox {
+		width: 80vw;
+	}
+}
+
+@media all and (max-width: 375px) {
+	.IndependentIEIndexContainer_NavBar_SearchBox {
+		width: 70vw;
+	}
+}
+
+@media all and (min-width: 0px) {
+	// check mobile responsiveness, and overall 'blind spots'
+}
+
+//********************************************************************
+//        Horizontal Line
+// *******************************************************************
+.IndependentIEIndexContainer_HorizontalLine {
+	border-bottom: 3px solid black;
+	margin: 5px 0px;
+}
+
+//********************************************************************
+//        In Focus Section
+// *******************************************************************
+.IndependentIEIndexContainer_InFocusSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.IndependentIEIndexContainer_InFocusSection_ItemsBox {
+	display: flex;
+	column-gap: 25px;
+}
+
+.IndependentIEIndexContainer_InFocusSection_ItemsBox_SingleItem {
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+}
+
+// bootstrap media queries
+@media all and (max-width: 992px) {
+	.IndependentIEIndexContainer_InFocusSection_ItemsBox {
+		flex-wrap: wrap;
+		row-gap: 10px;
+		justify-content: center;
+	}
+}
+
+//********************************************************************
+//       IndependentIEIndexContainer_SectionSeparator
+// *******************************************************************
+
+.IndependentIEIndexContainer_SectionSeparator {
+	height: 50px;
+}
+
+@media all and (max-width: 1023px) {
+	.IndependentIEIndexContainer_SectionSeparator {
+		height: 40px;
+	}
+}

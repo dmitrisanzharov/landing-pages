@@ -12,7 +12,7 @@ export default function Home() {
 			</Helmet>
 			<h1>Design</h1>
 			<div className="HomeContainer_Heading2">
-				<em>all are mobile optimised</em>
+				<em>all are mobile optimised, count: {allMyDesignProjects.length}</em>
 			</div>
 			{allMyDesignProjects &&
 				allMyDesignProjects.map((el, i) => {
@@ -104,7 +104,11 @@ export default function Home() {
 												<b>Page Performance improvements from original:</b>
 												<ul>
 													{pagePerformance.map((el, i) => {
-														return <li>{el}</li>;
+														return (
+															<li key={new Date().getTime().toString() + el}>
+																{el}
+															</li>
+														);
 													})}
 												</ul>
 											</li>

@@ -1,0 +1,57 @@
+@import "../../variables";
+
+.IndependentIE_twoByFiveContainer {
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 33% 37%;
+	gap: 25px;
+}
+
+.IndependentIE_twoByFiveContainer_SingleItem {
+	display: flex;
+	flex-direction: column;
+	row-gap: 18px;
+	cursor: pointer;
+}
+
+.IndependentIE_twoByFiveContainer_SingleItem_Image {
+	position: relative;
+}
+
+.IndependentIE_twoByFiveContainer_SingleItem_Text {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+// bootstrap media queries
+@media all and (max-width: 1023px) {
+	.IndependentIE_twoByFiveContainer {
+		grid-template-columns: repeat(2, 48.5%);
+	}
+}
+
+@media all and (max-width: 650px) {
+	.IndependentIE_twoByFiveContainer {
+		grid-template-columns: repeat(2, 48.1%);
+	}
+}
+
+@media all and (max-width: 550px) {
+	.IndependentIE_twoByFiveContainer {
+		grid-template-columns: repeat(2, 47.7%);
+	}
+}
+
+@media all and (max-width: 450px) {
+	.IndependentIE_twoByFiveContainer {
+		grid-template-columns: repeat(2, 47.1%);
+	}
+}
+
+@media all and (max-width: 350px) {
+	.IndependentIE_twoByFiveContainer {
+		grid-template-columns: repeat(2, 46%);
+	}
+}

@@ -4,8 +4,11 @@ import "./styles-global.css";
 
 // Pages
 import Home from "./pages/Home/Home";
-import Buffer from "./pages/Buffer/buffer-index.js";
 import ComponentDevelopmentPage from "./pages/ComponentDevelopmentPage/ComponentDevelopmentPage";
+
+// Sites
+import Buffer from "./pages/Buffer/buffer-index.js";
+import IndependentIE from "./pages/IndependentIE/IndependentIEIndex.js";
 
 function App() {
 	return (
@@ -20,8 +23,9 @@ function App() {
 						element={<ComponentDevelopmentPage />}
 					/>
 
-					{/* PAGES */}
+					{/* Sites */}
 					<Route exact path="/buffer" element={<Buffer />} />
+					<Route exact path="/independent-ie" element={<IndependentIE />} />
 				</Routes>
 			</Router>
 		</>
