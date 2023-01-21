@@ -1,0 +1,98 @@
+.IndependentIE_OpinionAndAnalysis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem {
+  padding-bottom: 24px;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem_TextBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem_TextBox_CategoryAndPremium {
+  margin-bottom: 5px;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem_TextBox_QuoteAuthor {
+  color: gray;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem_TextBox_Heading_ReverseQuotes {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+@media all and (max-width: 1023px) {
+  .IndependentIE_OpinionAndAnalysis {
+    grid-template-columns: 1fr;
+  }
+  .IndependentIE_OpinionAndAnalysis_SingleItem {
+    flex-direction: row;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  .IndependentIE_OpinionAndAnalysis_SingleItem_ImgBox {
+    max-width: 25%;
+    min-width: 25%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+.IndependentIE_OpinionAndAnalysis_SingleItem2 {
+  border-bottom: 1px solid black;
+  padding-top: 24px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-bottom: 0;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem2_Text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem2_Text_Heading {
+  margin-bottom: 10px;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem2_Img {
+  position: relative;
+  min-width: 117px;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem2_Img > div {
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+}
+
+.IndependentIE_OpinionAndAnalysis_SingleItem_Text_QuoteAuthor,
+.IndependentIE_OpinionAndAnalysis_SingleItem2_Img,
+.IndependentIE_OpinionAndAnalysis_SingleItem_ImgBox,
+.IndependentIE_OpinionAndAnalysis_SingleItem_TextBox {
+  cursor: pointer;
+}
+
+@media all and (max-width: 1023px) {
+  .IndependentIE_OpinionAndAnalysis_SingleItem2 {
+    min-height: 126px;
+  }
+  .IndependentIE_OpinionAndAnalysis_SingleItem2_Text {
+    width: 86%;
+  }
+  .IndependentIE_OpinionAndAnalysis_SingleItem2_Img {
+    width: auto;
+  }
+}/*# sourceMappingURL=OpinionAndAnalysis.css.map */

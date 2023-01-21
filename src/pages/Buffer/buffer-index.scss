@@ -238,7 +238,7 @@ $button-blue: rgb(44, 75, 255);
 	height: 400px;
 	padding-right: 30px;
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -965,7 +965,7 @@ $button-blue: rgb(44, 75, 255);
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	align-items: end;
+	align-items: flex-end;
 }
 
 .BufferIndex_MarketingPartnersSection_InnerContainer_LogosContainer {

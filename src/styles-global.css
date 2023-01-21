@@ -52,6 +52,8 @@
 
 .IndependentIE_MainContentContainer {
   max-width: 981px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media all and (max-width: 1023px) {
@@ -88,6 +90,7 @@
   -webkit-text-decoration-color: transparent;
           text-decoration-color: transparent;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .IndependentIEBigHeading:hover,

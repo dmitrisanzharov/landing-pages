@@ -1,6 +1,5 @@
 import React from "react";
 import "./TwoPicsAnd4SmallBoxesComponent.css";
-import photoIcon2 from "../../icons/photoIcon2.svg";
 
 // components
 import PhotoSmallIconCategory from "../PhotoSmallIconCategory/PhotoSmallIconCategory";

@@ -1,0 +1,43 @@
+.IndependentIE_TwoBySixSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 22px;
+  grid-row-gap: 39px;
+}
+
+.IndependentIE_TwoBySixSection_SingleItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.IndependentIE_TwoBySixSection_SingleItem_ImgHolder {
+  position: relative;
+  cursor: pointer;
+}
+
+.IndependentIE_TwoBySixSection_SingleItem_TextHolder {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+@media all and (max-width: 1023px) {
+  .IndependentIE_TwoBySixSection {
+    grid-template-columns: 1fr;
+  }
+  .IndependentIE_TwoBySixSection_SingleItem {
+    flex-direction: row;
+    row-gap: 0px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+  .IndependentIE_TwoBySixSection_SingleItem_ImgHolder {
+    max-width: 25%;
+    min-width: 25%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}/*# sourceMappingURL=TwoBySix.css.map */

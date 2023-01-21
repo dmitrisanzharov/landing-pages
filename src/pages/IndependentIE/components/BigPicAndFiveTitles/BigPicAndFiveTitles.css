@@ -1,0 +1,98 @@
+.IndependentIE_BigPicAndFiveTitlesSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 1023px) {
+  .IndependentIE_BigPicAndFiveTitlesSection {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
+.IndependentIE_BigPicAndFiveTitlesSection_ImgBox {
+  max-width: 63.4%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  cursor: pointer;
+}
+
+.IndependentIE_BigPicAndFiveTitlesSection_ImgBox_TextBox {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+@media all and (max-width: 1023px) {
+  .IndependentIE_BigPicAndFiveTitlesSection_ImgBox {
+    max-width: 100%;
+    row-gap: 14px;
+  }
+}
+.IndependentIE_BigPicAndFiveTitlesSection_ImgBox_ImgHolder {
+  position: relative;
+}
+
+.IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer {
+  width: 30.5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+@media all and (max-width: 1023px) {
+  .IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer {
+    width: 100%;
+    row-gap: 14px;
+  }
+}
+.IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_MostRead {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  border-bottom: 2px solid black;
+}
+
+.IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_SingleTitleItem {
+  display: flex;
+}
+
+.IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_SingleTitleItem_Index {
+  width: 10%;
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 700;
+  color: gray;
+}
+
+.IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_SingleTitleItem_DaysAgoAndHeading {
+  width: 90%;
+}
+
+.IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_SingleTitleItem_DaysAgoAndHeading_DaysAgo {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: gray;
+}
+
+.IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_SingleTitleItem_DaysAgoAndHeading_Heading {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1023px) {
+  .IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_SingleTitleItem_Index {
+    width: 5%;
+  }
+  .IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_SingleTitleItem_DaysAgoAndHeading_Heading,
+.IndependentIE_BigPicAndFiveTitlesSection_TitlesContainer_MostRead {
+    font-size: 21px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=BigPicAndFiveTitles.css.map */

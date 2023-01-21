@@ -363,8 +363,15 @@
   height: 50px;
 }
 
+.IndependentIEIndexContainer_SectionSeparator--Medium {
+  height: 32px;
+}
+
 @media all and (max-width: 1023px) {
   .IndependentIEIndexContainer_SectionSeparator {
     height: 40px;
+  }
+  .IndependentIEIndexContainer_SectionSeparator--Medium {
+    height: 72px;
   }
 }/*# sourceMappingURL=IndependentIEIndex.css.map */

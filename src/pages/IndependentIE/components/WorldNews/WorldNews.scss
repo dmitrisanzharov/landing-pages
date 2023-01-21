@@ -1,0 +1,113 @@
+.IndependentIE_WorldNews {
+	background-color: #e8e8e8;
+	padding: 34px 0px;
+}
+
+.IndependentIE_WorldNews_InnerContainer {
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+}
+
+//********************************************************************
+//         image part
+// *******************************************************************
+.IndependentIE_WorldNews_InnerContainer_ImgBox_ImgHolder {
+	position: relative;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ImgBox_ImgHolder_TextBox {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 12px 22px 25px;
+	z-index: 1;
+	max-height: 195px;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ImgBox_ImgHolder_TextBox_Background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.4;
+	z-index: -1;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ImgBox_ImgHolder_TextBox_Category {
+	color: lightgray;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ImgBox_ImgHolder_TextBox_MiniIconAndHeading {
+	cursor: pointer;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ImgBox_ImgHolder_TextBox_MiniIconAndHeading_MiniIcon {
+	height: fit-content;
+	margin-right: 13px;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ImgBox_ImgHolder_TextBox_MiniIconAndHeading_Heading {
+	color: white;
+}
+
+// bootstrap media queries
+@media all and (max-width: 370px) {
+	.IndependentIE_WorldNews_InnerContainer_ImgBox_ImgHolder_TextBox_MiniIconAndHeading_Heading {
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 600;
+	}
+}
+
+//********************************************************************
+//         text box part
+// *******************************************************************
+.IndependentIE_WorldNews_InnerContainer_ItemsBox {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 24px;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ItemsBox_SingleItem_Premium {
+	transform: scale(1.2);
+	position: relative;
+	left: 24px;
+	width: 80%;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ItemsBox_SingleItem_Quote {
+	color: gray !important;
+	margin-top: 5px;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ItemsBox_SingleItem_Heading_QuotesIcon {
+	position: relative;
+	margin-right: 4px;
+	top: 3px;
+}
+
+.IndependentIE_WorldNews_InnerContainer_ItemsBox_SingleItem_Heading_MiniIcon {
+	max-width: 20px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+// bootstrap media queries
+@media all and (max-width: 1023px) {
+	.IndependentIE_WorldNews_InnerContainer_ItemsBox {
+		flex-direction: column;
+		column-gap: 0px;
+		row-gap: 40px;
+	}
+
+	.IndependentIE_WorldNews_InnerContainer_ItemsBox_SingleItem_Premium {
+		left: 9vw;
+		width: 100%;
+	}
+}

@@ -10,6 +10,10 @@ import twoPicsAnd4SmallBoxesComponentData from "./view/twoPicsAnd4SmallBoxesComp
 import fourBoxesComponentData from "./view/fourBoxesComponentData";
 import twoByFiveComponentData from "./view/twoByFiveComponentData";
 import videoSectionData from "./view/videoSectionData";
+import bigPicAndFiveTitlesData from "./view/bigPicAndFiveTitlesData";
+import twoBySixData from "./view/twoBySixData";
+import worldNewsData from "./view/worldNewsData";
+import opinionAndAnalysisData from "./view/opinionAndAnalysisData";
 
 // icons
 import searchIcon from "./icons/searchIcon.svg";
@@ -25,6 +29,10 @@ import FourBoxes from "./components/FourBoxes/FourBoxes";
 import SectionTitle from "./components/SectionTitle/SectionTitle";
 import TwoByFiveComponent from "./components/twoByFiveComponent/twoByFiveComponent";
 import VideoSection from "./components/VideoSection/VideoSection";
+import BigPicAndFiveTitles from "./components/BigPicAndFiveTitles/BigPicAndFiveTitles";
+import TwoBySix from "./components/TwoBySix/TwoBySix";
+import WorldNews from "./components/WorldNews/WorldNews";
+import OpinionAndAnalysis from "./components/OpinionAndAnalysis/OpinionAndAnalysis";
 
 const IndependentIEIndex = () => {
 	// state
@@ -295,6 +303,48 @@ const IndependentIEIndex = () => {
 			{/* --------------------------------------------- */}
 
 			<VideoSection data={videoSectionData[0]} />
+
+			{/* --------------------------------------------- */}
+			{/* ----------Section separator ------------------ */}
+			{/* --------------------------------------------- */}
+
+			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
+			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
+
+			<SectionTitle titleName="Featured" showMore={false} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
+
+			<BigPicAndFiveTitles data={bigPicAndFiveTitlesData[0]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
+
+			<div className="IndependentIE_MainContentContainer">
+				{" "}
+				<hr />
+			</div>
+
+			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
+
+			<TwoBySix data={twoBySixData[0]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
+
+			<WorldNews data={worldNewsData[0]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
+
+			<SectionTitle titleName="Opinion & Analysis" />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<OpinionAndAnalysis data={opinionAndAnalysisData[0]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<SectionTitle titleName="Sport" />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
 
 			{/* --------------------------------------------- */}
 			{/* ----------some content for spacing ------------------ */}

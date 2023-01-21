@@ -158,7 +158,7 @@
 
 @media all and (min-width: 992px) {
 	.HeadingsX3nImageContainer_inner_box1_text_heading1 {
-		text-align: start;
+		text-align: flex-start;
 		font-size: 20px;
 		line-height: 31px;
 	}
@@ -231,7 +231,7 @@
 
 @media all and (min-width: 992px) {
 	.HeadingsX3nImageContainer_inner_box1_text_buttonHolder {
-		justify-content: start;
+		justify-content: flex-start;
 	}
 }
 
