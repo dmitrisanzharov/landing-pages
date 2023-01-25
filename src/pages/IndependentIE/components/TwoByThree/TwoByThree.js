@@ -1,11 +1,11 @@
 import React from "react";
-import "./TwoBySix.css";
+import "./TwoByThree.css";
 
 // components
 import PhotoSmallIconCategory from "../PhotoSmallIconCategory/PhotoSmallIconCategory";
 import PremiumIcon from "../PremiumIcon/PremiumIcon";
 
-const TwoBySix = ({ data }) => {
+const TwoByThree = ({ data }) => {
 	return (
 		<section className="IndependentIE_TwoBySixSection IndependentIE_MainContentContainer ">
 			{data &&
@@ -38,4 +38,4 @@ const TwoBySix = ({ data }) => {
 	);
 };
 
-export default TwoBySix;
+export default TwoByThree;

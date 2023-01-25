@@ -14,6 +14,11 @@ export default function Home() {
 			<div className="HomeContainer_Heading2">
 				<em>all are mobile optimised, count: {allMyDesignProjects.length}</em>
 			</div>
+			<div>
+				<button>
+					<Link to="/component-development-page">Dev page</Link>
+				</button>
+			</div>
 			{allMyDesignProjects &&
 				allMyDesignProjects.map((el, i) => {
 					const {

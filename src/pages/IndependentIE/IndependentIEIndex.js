@@ -11,9 +11,10 @@ import fourBoxesComponentData from "./view/fourBoxesComponentData";
 import twoByFiveComponentData from "./view/twoByFiveComponentData";
 import videoSectionData from "./view/videoSectionData";
 import bigPicAndFiveTitlesData from "./view/bigPicAndFiveTitlesData";
-import twoBySixData from "./view/twoBySixData";
+import twoByThreeData from "./view/twoByThreeData";
 import worldNewsData from "./view/worldNewsData";
 import opinionAndAnalysisData from "./view/opinionAndAnalysisData";
+import subscribeNewsLetterData from "./view/subscribeNewsLetterData";
 
 // icons
 import searchIcon from "./icons/searchIcon.svg";
@@ -30,9 +31,11 @@ import SectionTitle from "./components/SectionTitle/SectionTitle";
 import TwoByFiveComponent from "./components/twoByFiveComponent/twoByFiveComponent";
 import VideoSection from "./components/VideoSection/VideoSection";
 import BigPicAndFiveTitles from "./components/BigPicAndFiveTitles/BigPicAndFiveTitles";
-import TwoBySix from "./components/TwoBySix/TwoBySix";
+import TwoByThree from "./components/TwoByThree/TwoByThree";
 import WorldNews from "./components/WorldNews/WorldNews";
 import OpinionAndAnalysis from "./components/OpinionAndAnalysis/OpinionAndAnalysis";
+import SubscribeOne from "./components/SubscribeOne/SubscribeOne";
+import SubscribeNewsLetter from "./components/SubscribeNewsLetter/SubscribeNewsLetter";
 
 const IndependentIEIndex = () => {
 	// state
@@ -326,7 +329,7 @@ const IndependentIEIndex = () => {
 
 			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
 
-			<TwoBySix data={twoBySixData[0]} />
+			<TwoByThree data={twoByThreeData[0]} />
 
 			<div className="IndependentIEIndexContainer_SectionSeparator "></div>
 
@@ -342,7 +345,75 @@ const IndependentIEIndex = () => {
 
 			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
 
+			<SubscribeOne />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
 			<SectionTitle titleName="Sport" />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<TwoByThree data={twoByThreeData[1]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<SectionTitle
+				titleName="Local News"
+				showMore={false}
+				showCountyDropDown={true}
+			/>
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<TwoPicsAnd4SmallBoxesComponent
+				data={twoPicsAnd4SmallBoxesComponentData[1]}
+			/>
+
+			<FourBoxes data={fourBoxesComponentData[1]} />
+
+			<div className="IndependentIEIndexContainer_FourBoxesSeparator"></div>
+
+			<FourBoxes data={fourBoxesComponentData[2]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<SectionTitle
+				titleName="Editor's Choice"
+				showMore={false}
+				showCountyDropDown={false}
+			/>
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<FourBoxes data={fourBoxesComponentData[3]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<SectionTitle
+				titleName="Podcasts"
+				showMore={true}
+				showCountyDropDown={false}
+			/>
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<FourBoxes data={fourBoxesComponentData[4]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<SubscribeNewsLetter data={subscribeNewsLetterData[0]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<SubscribeNewsLetter data={subscribeNewsLetterData[1]} />
+
+			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
+
+			<SectionTitle
+				titleName="Entertainment"
+				showMore={true}
+				showCountyDropDown={false}
+			/>
 
 			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
 

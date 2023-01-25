@@ -37,4 +37,63 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.IndependentIE_SectionTitleContainer_CountyDropDown {
+  display: flex;
+  position: relative;
+}
+
+.IndependentIE_SectionTitleContainer_CountyDropDown_DropDownBox {
+  width: 209px;
+  height: 37px;
+  background: yellow !important;
+}
+
+.IndependentIE_SectionTitleContainer_CountyDropDown_DropDownBox:focus-within {
+  background-color: lightgray;
+}
+
+.IndependentIE_SectionTitleContainer_CountyDropDown_DropDownBox:focus {
+  border: 1px solid red;
+}
+
+.IndependentIE_SectionTitleContainer_CountyDropDown_LocationIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IndependentIE_SectionTitleContainer_CountyDropDown_DropDownBox select {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 5px;
+  border: 1px solid lightgray;
+  outline: 1px solid lightgray;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.IndependentIE_SectionTitleContainer_CountyDropDown_DropDownBox select:focus {
+  border: 1px solid black;
+  box-shadow: rgba(211, 211, 211, 0.25) 0px 30px 60px -12px inset, rgba(211, 211, 211, 0.25) 0px 18px 36px -18px inset;
+}
+
+.IndependentIE_SectionTitleContainer_CountyDropDown_DropDownBox_UpAndDownIcon {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  height: 30px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  pointer-events: none;
 }/*# sourceMappingURL=SectionTitle.css.map */

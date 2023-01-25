@@ -1,0 +1,112 @@
+.IndependentIE_SubscribeOneSection * {
+	box-sizing: border-box;
+}
+
+.IndependentIE_SubscribeOneSection {
+	display: flex;
+	max-height: 272px;
+	margin: 30px 0px;
+}
+
+//********************************************************************
+//          text
+// *******************************************************************
+
+.IndependentIE_SubscribeOneSection_TextBox {
+	width: 67%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.IndependentIE_SubscribeOneSection_TextBox_Heading1 {
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.IndependentIE_SubscribeOneSection_TextBox_Heading2 {
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 400;
+	color: gray;
+}
+
+.IndependentIE_SubscribeOneSection_TextBox_Button {
+	margin: 20px 0px;
+}
+
+.IndependentIE_SubscribeOneSection_TextBox_Button button {
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	width: 254px;
+	height: 46px;
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.IndependentIE_SubscribeOneSection_TextBox_Button button:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.IndependentIE_SubscribeOneSection_TextBox_Heading2a {
+	@extend .IndependentIE_SubscribeOneSection_TextBox_Heading2;
+	display: flex;
+}
+
+.IndependentIE_SubscribeOneSection_TextBox_Heading2a div:nth-of-type(2) {
+	color: green;
+	border-bottom: 2px solid lightgray;
+	cursor: pointer;
+	margin-left: 5px;
+	transition: border-bottom 0.5s ease;
+}
+
+.IndependentIE_SubscribeOneSection_TextBox_Heading2a div:nth-of-type(2):hover {
+	border-bottom: 2px solid green;
+}
+
+//********************************************************************
+//         image
+// *******************************************************************
+.IndependentIE_SubscribeOneSection_ImgBox {
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.IndependentIE_SubscribeOneSection_ImgBox img {
+	max-width: 63%;
+	min-width: 190px;
+}
+
+// bootstrap media queries
+@media all and (max-width: 719px) {
+	.IndependentIE_SubscribeOneSection {
+		flex-direction: column;
+		max-height: fit-content;
+		row-gap: 20px;
+	}
+
+	.IndependentIE_SubscribeOneSection_TextBox {
+		width: 100%;
+		align-items: center;
+	}
+
+	.IndependentIE_SubscribeOneSection_ImgBox {
+		width: 100%;
+		max-height: 248px;
+	}
+
+	.IndependentIE_SubscribeOneSection_ImgBox img {
+		width: 190px;
+	}
+}

@@ -33,7 +33,7 @@ const twoPicsAnd4SmallBoxesComponent = ({ data }) => {
 					{/* picture */}
 					<div className="twoPicsAnd4SmallBoxesComponent_Container_SmallPicBox_ImgHolder ">
 						<img src={smallPic.image} alt={smallPic.heading1} width="100%" />
-						<PhotoSmallIconCategory iconType="photo" />
+						{smallPic.miniIcon && <PhotoSmallIconCategory iconType="photo" />}
 					</div>
 					{/* text */}
 					<div className="twoPicsAnd4SmallBoxesComponent_Container_BigPicBox_TextHolder ">
