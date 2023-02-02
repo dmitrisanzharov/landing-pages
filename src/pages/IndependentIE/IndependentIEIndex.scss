@@ -3,10 +3,49 @@
 }
 
 //********************************************************************
+//          Privacy stuff
+// *******************************************************************
+
+.IndependentIEIndexContainer_PrivacyButton {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background-color: green;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 5px;
+	width: 116px;
+	height: 35px;
+	border-radius: 3px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.IndependentIEIndexContainer_PrivacyButton_GearIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.IndependentIEIndexContainer_PrivacyButton_GearIcon img {
+	width: 20px;
+}
+
+.IndependentIEIndexContainer_PrivacyButton_Text {
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 600;
+}
+
+//********************************************************************
 //          Search Bar Section
 // *******************************************************************
 .IndependentIEIndexContainer_SearchBarSection {
 	background-color: lightgray;
+	z-index: 2;
+	position: relative;
 }
 
 .IndependentIEIndexContainer_SearchBarSection_Container {
@@ -152,6 +191,9 @@
 	line-height: 62px;
 	font-weight: 700;
 	position: relative;
+	z-index: 10;
+	background-color: white;
+	width: 100%;
 }
 
 .IndependentIEIndexContainer_MainLogoSection > img {
@@ -210,6 +252,9 @@
 	margin-right: auto;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+	z-index: 10;
+	background-color: white;
 }
 
 .IndependentIEIndexContainer_NavBar_NavItems {

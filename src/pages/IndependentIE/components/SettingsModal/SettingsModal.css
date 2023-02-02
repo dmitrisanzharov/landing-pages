@@ -1,0 +1,133 @@
+.IndependentIE_SettingsModal_Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.6;
+  z-index: 9999;
+}
+
+.IndependentIE_SettingsModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.IndependentIE_SettingsModal_MainBox {
+  max-width: 600px;
+  min-height: 90vh;
+  background-color: white;
+  z-index: 20000;
+  padding: 30px 20px 10px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.IndependentIE_SettingsModal_MainBox_Header_Text,
+.IndependentIE_SettingsModal_MainBox_Header_X {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.IndependentIE_SettingsModal_MainBox_Header_X {
+  border-bottom: 2px solid lightgrey;
+  color: lightgrey;
+}
+
+.IndependentIE_SettingsModal_MainBox_Header_X:hover {
+  color: black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-bottom: 2px solid black;
+}
+
+.IndependentIE_SettingsModal_MainBox_Heading2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.IndependentIE_SettingsModal_MainBox_YouAllow {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.IndependentIE_SettingsModal_MainBox_ViewPartnerBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.IndependentIE_SettingsModal_MainBox_ViewPartnerBox_Btn {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: gray;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer {
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_DidomiImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 44px;
+  border-bottom: 2px solid lightgrey;
+  cursor: pointer;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_DidomiImg:hover {
+  transition: border-bottom 0.5s ease;
+  border-bottom: 2px solid black;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_DidomiImg img {
+  width: 150px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_Button {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_Button:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Items_SingleItem {
+  margin-top: 10px;
+}/*# sourceMappingURL=SettingsModal.css.map */

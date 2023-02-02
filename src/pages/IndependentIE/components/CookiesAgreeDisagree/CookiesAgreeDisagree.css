@@ -1,0 +1,205 @@
+.IndependentIE_CookiesAgreeDisagreeComponent_InfoText, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox span, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .InfoText, .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoText {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.IndependentIE_MinHeight_1675313928 {
+  min-height: 36px;
+}
+
+.IndependentIE_MarginTop15px_1675316671 {
+  margin-top: 15px;
+}
+
+.IndependentIE_MarginTop7px_1675316671 {
+  margin-top: 7px;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox--Columns {
+  flex-direction: column;
+  -moz-column-gap: none;
+       column-gap: none;
+  row-gap: 5px;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_TextBox, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .MainHeadingAndAgreeDisagreeButtonsBox .Box1_MainHeadingAndToggleButton, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer .SingleItemContainer .MainHeadingAndAgreeDisagreeButtonsBox--ExtraItems .Box1_MainHeadingAndToggleButton {
+  cursor: pointer;
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  border: 2px solid transparent;
+  text-align: left;
+  max-width: 67%;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_TextBox:focus, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .MainHeadingAndAgreeDisagreeButtonsBox .Box1_MainHeadingAndToggleButton:focus, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer .SingleItemContainer .MainHeadingAndAgreeDisagreeButtonsBox--ExtraItems .Box1_MainHeadingAndToggleButton:focus {
+  border: 2px solid blue;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_TextBox_Btn, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .MainHeadingAndAgreeDisagreeButtonsBox .Box1_MainHeadingAndToggleButton span, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer .SingleItemContainer .MainHeadingAndAgreeDisagreeButtonsBox--ExtraItems .Box1_MainHeadingAndToggleButton span {
+  outline: none;
+  background-color: white;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_TextBox_Heading, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .MainHeadingAndAgreeDisagreeButtonsBox .Box1_MainHeadingAndToggleButton div, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer .SingleItemContainer .MainHeadingAndAgreeDisagreeButtonsBox--ExtraItems .Box1_MainHeadingAndToggleButton div, .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_ButtonsBox_ConsentText {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 3px 0px;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown {
+  height: 0;
+  width: 0px;
+  overflow: hidden;
+  transform: scaleY(0);
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown--Opened {
+  height: auto;
+  width: 100%;
+  transform: scaleY(1);
+  transition: transform 0.2s ease-out;
+  transform-origin: top;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoIcon, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon {
+  cursor: help;
+  outline: none;
+  background: transparent;
+  border: none;
+  font-size: 1.15em;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox {
+  white-space: pre-line;
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 4px;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 400;
+  margin: 5px 0px;
+  display: none;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoIcon:focus ~ .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText, .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoIcon:focus ~ .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon:focus ~ .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon:focus ~ .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox {
+  display: block;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_ButtonsBox {
+  display: flex;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  align-items: flex-start;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_ButtonsBox--FlexEnd {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_ButtonsBox_ConsentText {
+  margin-right: 10px;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_ButtonsBox button {
+  background-color: white;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_ButtonsBox button:hover {
+  border: 1px solid black;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_ButtonsBox button span {
+  margin-right: 5px;
+}
+
+.IndependentIE_SettingsModal_MainBox_ViewPartnerBox_Btn--agree {
+  color: white;
+  border: 1px solid black;
+  background-color: green !important;
+}
+
+.IndependentIE_SettingsModal_MainBox_ViewPartnerBox_Btn--disagree {
+  color: white;
+  border: 1px solid black;
+  background-color: red !important;
+}
+
+.IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .MainHeadingAndAgreeDisagreeButtonsBox, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer .SingleItemContainer .MainHeadingAndAgreeDisagreeButtonsBox--ExtraItems {
+  display: flex;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .MainHeadingAndAgreeDisagreeButtonsBox .Box1_MainHeadingAndToggleButton div, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer .SingleItemContainer .MainHeadingAndAgreeDisagreeButtonsBox--ExtraItems .Box1_MainHeadingAndToggleButton div {
+  display: inline;
+}
+.IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper {
+  transform: scaleY(0);
+  height: 0px;
+  transition: transform 0.2s ease-out;
+  transform-origin: top;
+  overflow: hidden;
+}
+.IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open {
+  transform: scaleY(1);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 5px 10px 10px;
+}
+.IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox {
+  padding: 5px 0px 5px 10px;
+  border-left: 1px solid lightgray;
+}
+.IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .InfoText {
+  line-height: 20px;
+}
+.IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer {
+  margin-top: 15px;
+}
+.IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer .SingleItemContainer .MainHeadingAndAgreeDisagreeButtonsBox--ExtraItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.IndependentIE_SingleItemContainer_DropOutContainer {
+  transform: scaleY(0);
+  height: 0px;
+  transition: transform 0.2s ease-out;
+  transform-origin: top;
+  overflow: hidden;
+}
+
+.IndependentIE_SingleItemContainer_DropOutContainer--Open {
+  transform: scaleY(1);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon:focus ~ .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox {
+  display: block;
+}/*# sourceMappingURL=CookiesAgreeDisagree.css.map */

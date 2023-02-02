@@ -87,6 +87,14 @@
 //        ad hoc
 // *******************************************************************
 
+.IndependentIE_Z_Index_100 {
+	position: relative;
+	z-index: 1000 !important;
+	background-color: white;
+	width: 100%;
+	display: block;
+}
+
 .IndependentIEIndexContainer img {
 	border-radius: 4px;
 }
@@ -143,4 +151,27 @@
 
 .IndependentIE_ReverseQuotesImg {
 	margin-right: 7px;
+}
+
+.IndependentIE_HrWithBackGround {
+	background-color: lightgray !important;
+	padding: 0;
+	margin: 0;
+}
+
+.IndependentIE_HrWithBackGround hr {
+	margin: 0;
+	padding: 0;
+}
+
+.IndependentIE_FooterHolder {
+	background-color: lightgray;
+	position: relative;
+	z-index: 1000;
+}
+
+.IndependentIE_FooterEnder {
+	border-bottom: 1px solid gray;
+	height: 30px;
+	background-color: lightgray;
 }

@@ -18,7 +18,7 @@ const allMyDesignProjects = [
 		name: "Buffer",
 		link: "/buffer",
 		image: bufferPic,
-		dateStarted: "15-Dec-2022",
+		dateStarted: "15-Nov-2022",
 		dateFinished: "10-Dec-2022",
 		numberOfActivePages: 1,
 		highlights: [

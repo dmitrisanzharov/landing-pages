@@ -1,0 +1,61 @@
+.IndependentIE_SiteMapSection {
+  box-sizing: border-box;
+  padding: 20px 0px;
+}
+
+.IndependentIE_SiteMap_Inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.IndependentIE_SiteMap_Inner_SingleItem {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: gray;
+}
+
+.IndependentIE_SiteMap_Inner_SingleItem:hover {
+  text-decoration: underline;
+}
+
+.IndependentIE_SiteMap_Inner2 {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12px;
+}
+
+.IndependentIE_SiteMap_Inner2_Text {
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 400;
+  color: gray;
+  cursor: pointer;
+  text-align: center;
+}
+
+.IndependentIE_SiteMap_Inner2_Text span {
+  position: relative;
+  top: 7px;
+}
+
+@media all and (max-width: 719px) {
+  .IndependentIE_SiteMap_Inner {
+    display: grid;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin-bottom: 25px;
+  }
+  .IndependentIE_SiteMap_Inner_SingleItem--End {
+    justify-self: end;
+  }
+  .IndependentIE_SiteMap_Inner2 {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=SiteMap.css.map */

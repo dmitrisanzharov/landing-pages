@@ -1,0 +1,69 @@
+.IndependentIE_NavBarContainer {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 90;
+	background-color: white;
+}
+
+.IndependentIE_NavBarContainer * {
+	box-sizing: border-box;
+}
+
+.IndependentIE_NavBarContainer_Inner {
+	display: flex;
+}
+
+.IndependentIE_NavBarContainer_Inner_Logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.IndependentIE_NavBarContainer_Inner_Logo_Text {
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: 700;
+}
+
+.IndependentIE_NavBarContainer_Inner_Logo img {
+	width: 24px;
+}
+
+.IndependentIE_NavBarContainer_Inner_Items {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.IndependentIE_NavBarContainer_Inner_Items_SingleItem {
+	padding: 15px 0px;
+	cursor: pointer;
+	font-weight: bold;
+	border-bottom: 3px solid transparent;
+	transition: border-bottom 0.25s ease;
+}
+
+.IndependentIE_NavBarContainer_Inner_Items_SingleItem:hover {
+	border-bottom: 3px solid;
+}
+
+// bootstrap media queries
+@media all and (max-width: 800px) {
+	.IndependentIE_NavBarContainer_Inner_Logo_Text {
+		display: none;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.IndependentIE_NavBarContainer_Inner_Items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr 1fr;
+		justify-items: center;
+	}
+}
