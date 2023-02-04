@@ -22,11 +22,53 @@
 }
 
 .IndependentIE_SettingsModal_MainBox {
-	max-width: 600px;
-	min-height: 90vh;
+	max-width: 725px;
+	min-height: 60vh;
+	max-height: 100vh;
 	background-color: white;
 	z-index: 20000;
 	padding: 30px 20px 10px;
+	border-radius: 5px;
+	overflow: auto;
+	border: 1px solid black;
+	outline: 1px solid white;
+	box-shadow: 0 0 0 2px gray;
+}
+
+.IndependentIE_SettingsModal_MainBox_MiniHeading {
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 700;
+}
+
+.IndependentIE_SettingsModal_MainBox_MiniHeading--Gray {
+	@extend .IndependentIE_SettingsModal_MainBox_MiniHeading;
+	color: gray;
+}
+
+.IndependentIE_SettingsModal_MainBox_ManageBtn {
+	width: 100%;
+	outline: none;
+	color: black;
+	border: 1px solid lightgray !important;
+	background-color: white;
+	padding: 7px 0px;
+	font-size: 18px;
+	line-height: 29px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.IndependentIE_SettingsModal_MainBox_ManageBtn:hover {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.IndependentIE_SettingsModal_MainBox_ManageBtn--Accept {
+	@extend .IndependentIE_SettingsModal_MainBox_ManageBtn;
+	background-color: black;
+	border-color: black;
+	color: white;
 }
 
 // HEADER
@@ -64,6 +106,17 @@
 	margin-bottom: 15px;
 }
 
+.IndependentIE_SettingsModal_MainBox_Heading2_OurPartnersSpan {
+	text-decoration: underline;
+	cursor: pointer;
+	border-bottom: 1px solid lightgray;
+}
+
+.IndependentIE_SettingsModal_MainBox_Heading2_OurPartnersSpan:hover {
+	transition: border-bottom 2s ease;
+	border-bottom: 1px solid black;
+}
+
 .IndependentIE_SettingsModal_MainBox_YouAllow {
 	font-size: 14px;
 	line-height: 20px;
@@ -99,7 +152,7 @@
 
 .IndependentIE_SettingsModal_MainBox_Footer_DidomiImg {
 	position: absolute;
-	left: 0;
+	left: -18px;
 	bottom: 0;
 	height: 44px;
 	border-bottom: 2px solid lightgrey;
@@ -132,6 +185,30 @@
 
 .IndependentIE_SettingsModal_MainBox_Footer_Button:hover {
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+//********************************************************************
+//         2 BUTTONS STYLING - AGREE / DISAGREE TO ALL
+// *******************************************************************
+
+.IndependentIE_SettingsModal_MainBox_Footer_TwoButtons {
+	display: flex;
+	flex-direction: row-reverse;
+	column-gap: 10px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll {
+	@extend .IndependentIE_SettingsModal_MainBox_Footer_Button;
+	width: fit-content;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll--Disagree {
+	@extend .IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll;
+	background-color: lightgray;
+	color: black;
+	border: 1px solid black;
 }
 
 .IndependentIE_SettingsModal_MainBox_Items_SingleItem {

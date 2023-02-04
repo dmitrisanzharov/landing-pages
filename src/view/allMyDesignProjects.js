@@ -2,17 +2,31 @@ import bufferPic from "../images/bufferPic.avif";
 import wipsterBrotherPic from "../images/wipsterBrotherPic.avif";
 import stripePic from "../images/stripePic.avif";
 import finLendersPic from "../images/finLendersPic.avif";
+import indepenedentIE from "../images/independent_ie.webp";
 
 const allMyDesignProjects = [
 	{
 		name: "Independent.ie",
 		link: "/independent-ie",
-		image: null,
+		image: indepenedentIE,
 		dateStarted: "13-Jan-2023",
-		dateFinished: "to do",
+		dateFinished: "03-Feb-2023",
 		numberOfActivePages: 1,
-		highlights: ["todo"],
-		pagePerformance: ["todo"],
+		highlights: [
+			"HUGE: Cookie setting module, and logic - can agree/disagree to all, remembers decision on reload, pops up first time, Main and Sub-item iteraction, when Main is agreed to, all other auto-agree",
+			"sliding search on click",
+			"navbar z-index, super good demo, hides behinds elements",
+			"weather api,  that asks for location",
+			"fixed original errors in mobile optimisation",
+			"navbar flex-wrap, very good use",
+		],
+		pagePerformance: [
+			"page loads 113% faster",
+			"Lighthouse performance is up by 39%",
+			"Lighthouse accessibility is up by 10%",
+			"Lighthouse best practices are up by 11%",
+			"Lighthouse seo is up by 9%",
+		],
 	},
 	{
 		name: "Buffer",
@@ -28,7 +42,7 @@ const allMyDesignProjects = [
 			"rolling testimonials",
 		],
 		pagePerformance: [
-			"page loads 232% seconds faster",
+			"page loads 232% faster",
 			"Lighthouse performance is up by 45%",
 			"Lighthouse accessibility is up by 5%",
 			"Lighthouse seo is up by 9%",

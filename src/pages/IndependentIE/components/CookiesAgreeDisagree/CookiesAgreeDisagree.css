@@ -16,6 +16,13 @@
   margin-top: 7px;
 }
 
+.IndependentIE_CookiesAgreeDisagreeComponent button:focus,
+.IndependentIE_CookiesAgreeDisagreeComponent button:active {
+  outline: 1px solid blue;
+  border: 1px solid blue;
+  border-radius: 2px;
+}
+
 .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox {
   display: flex;
   justify-content: space-between;
@@ -82,10 +89,10 @@
 
 .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoIcon, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon {
   cursor: help;
-  outline: none;
   background: transparent;
-  border: none;
+  border: none !important;
   font-size: 1.15em;
+  outline: none !important;
 }
 
 .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox {
@@ -102,7 +109,11 @@
   overflow: auto;
 }
 
-.IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoIcon:focus ~ .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText, .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoIcon:focus ~ .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon:focus ~ .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText, .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon:focus ~ .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox {
+.IndependentIE_CookiesModal_DropDownFix_1675391910 {
+  display: inline;
+}
+
+.IndependentIE_CookiesModal_DropDownFix_1675391910:focus-within > .IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText, .IndependentIE_CookiesModal_DropDownFix_1675391910:focus-within > .IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox {
   display: block;
 }
 
@@ -152,6 +163,7 @@
   display: flex;
   -moz-column-gap: 25px;
        column-gap: 25px;
+  justify-content: space-between;
 }
 .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .MainHeadingAndAgreeDisagreeButtonsBox .Box1_MainHeadingAndToggleButton div, .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open .InnerBox .ExtraItemsContainer .SingleItemContainer .MainHeadingAndAgreeDisagreeButtonsBox--ExtraItems .Box1_MainHeadingAndToggleButton div {
   display: inline;

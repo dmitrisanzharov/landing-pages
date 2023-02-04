@@ -22,11 +22,51 @@
 }
 
 .IndependentIE_SettingsModal_MainBox {
-  max-width: 600px;
-  min-height: 90vh;
+  max-width: 725px;
+  min-height: 60vh;
+  max-height: 100vh;
   background-color: white;
   z-index: 20000;
   padding: 30px 20px 10px;
+  border-radius: 5px;
+  overflow: auto;
+  border: 1px solid black;
+  outline: 1px solid white;
+  box-shadow: 0 0 0 2px gray;
+}
+
+.IndependentIE_SettingsModal_MainBox_MiniHeading, .IndependentIE_SettingsModal_MainBox_MiniHeading--Gray {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.IndependentIE_SettingsModal_MainBox_MiniHeading--Gray {
+  color: gray;
+}
+
+.IndependentIE_SettingsModal_MainBox_ManageBtn, .IndependentIE_SettingsModal_MainBox_ManageBtn--Accept {
+  width: 100%;
+  outline: none;
+  color: black;
+  border: 1px solid lightgray !important;
+  background-color: white;
+  padding: 7px 0px;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.IndependentIE_SettingsModal_MainBox_ManageBtn:hover, .IndependentIE_SettingsModal_MainBox_ManageBtn--Accept:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.IndependentIE_SettingsModal_MainBox_ManageBtn--Accept {
+  background-color: black;
+  border-color: black;
+  color: white;
 }
 
 .IndependentIE_SettingsModal_MainBox_Header {
@@ -61,6 +101,17 @@
   margin-bottom: 15px;
 }
 
+.IndependentIE_SettingsModal_MainBox_Heading2_OurPartnersSpan {
+  text-decoration: underline;
+  cursor: pointer;
+  border-bottom: 1px solid lightgray;
+}
+
+.IndependentIE_SettingsModal_MainBox_Heading2_OurPartnersSpan:hover {
+  transition: border-bottom 2s ease;
+  border-bottom: 1px solid black;
+}
+
 .IndependentIE_SettingsModal_MainBox_YouAllow {
   font-size: 14px;
   line-height: 20px;
@@ -93,7 +144,7 @@
 
 .IndependentIE_SettingsModal_MainBox_Footer_DidomiImg {
   position: absolute;
-  left: 0;
+  left: -18px;
   bottom: 0;
   height: 44px;
   border-bottom: 2px solid lightgrey;
@@ -109,7 +160,7 @@
   width: 150px;
 }
 
-.IndependentIE_SettingsModal_MainBox_Footer_Button {
+.IndependentIE_SettingsModal_MainBox_Footer_Button, .IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll, .IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll--Disagree {
   border-radius: 5px;
   background-color: black;
   color: white;
@@ -124,8 +175,29 @@
   cursor: pointer;
 }
 
-.IndependentIE_SettingsModal_MainBox_Footer_Button:hover {
+.IndependentIE_SettingsModal_MainBox_Footer_Button:hover, .IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll:hover, .IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll--Disagree:hover {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_TwoButtons {
+  display: flex;
+  flex-direction: row-reverse;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll, .IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll--Disagree {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll--Disagree {
+  background-color: lightgray;
+  color: black;
+  border: 1px solid black;
 }
 
 .IndependentIE_SettingsModal_MainBox_Items_SingleItem {

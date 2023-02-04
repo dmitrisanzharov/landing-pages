@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import "./IndependentIEIndex.css";
 import moment from "moment";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 // view
 import allSectionsAndSubSections from "./view/allSectionsAndSubSections";
@@ -54,8 +55,37 @@ const IndependentIEIndex = () => {
 	const [openSectionsInNavBar, setOpenSectionsInNavBar] = useState(false);
 	const [openSettings, setOpenSettings] = useState(false);
 	const [cookieDataDummyReRender, setCookieDataDummyReRender] = useState(0);
+	const [firstVisitState, setFirstVisitState] = useState(false);
 
 	// functions
+
+	function acceptOrRejectAllCookies(decision) {
+		let finalData = cookiesSettings.map((el) => {
+			if (el.extraItems) {
+				const agreeAllExtraItems = el.items.map((el2) => {
+					if (el2.legitimateInterestConcent_ExtItm.show) {
+						el2.legitimateInterestConcent_ExtItm.consent = decision;
+					}
+					return {
+						...el2,
+						consentExtItm: decision,
+					};
+				});
+				el.items = agreeAllExtraItems;
+			}
+
+			return { ...el, concent: decision };
+		});
+		console.log("finalData: ", finalData);
+		sessionStorage.setItem(
+			"independentIECookieSettings",
+			JSON.stringify(finalData)
+		);
+		sessionStorage.removeItem("firstVisit");
+		setFirstVisitState(false);
+		setOpenSettings(false);
+		setCookieDataDummyReRender(cookieDataDummyReRender + 1);
+	}
 
 	// useEffects
 	useEffect(() => {
@@ -93,22 +123,63 @@ const IndependentIEIndex = () => {
 	}, [latitude, longitude]);
 
 	useMemo(() => {
+		// check first visit but no action taken on cookies
+		const checkIfFirstVisitButNoAction = sessionStorage.getItem("firstVisit");
+
+		if (checkIfFirstVisitButNoAction === "yes") {
+			setFirstVisitState(true);
+			setOpenSettings(true);
+			return;
+		}
+
 		const checkIfPreviouslyUsed = sessionStorage.getItem(
 			"independentIECookieSettings"
 		);
 
+		// if previously used, close all openned tabs and exit
 		if (checkIfPreviouslyUsed) {
+			let finalData = JSON.parse(checkIfPreviouslyUsed).map((el) => {
+				// handle Extra items
+
+				if (el.extraItems) {
+					let finalItems = el.items.map((el2) => {
+						return { ...el2, info_ExtItm: { ...el2.info_ExtItm, show: false } };
+					});
+					el.items = finalItems;
+				}
+
+				// without extraItems, no need to handle tooltip
+				return { ...el, info: { ...el.info, show: false } };
+			});
+
+			sessionStorage.setItem(
+				"independentIECookieSettings",
+				JSON.stringify(finalData)
+			);
+
 			return;
 		}
 
-		sessionStorage.setItem(
-			"independentIECookieSettings",
-			JSON.stringify(cookiesSettings)
-		);
+		// if previously NOT used, first visit, then mark it as first visit AND open model AND put original object into storage
+		if (!checkIfPreviouslyUsed) {
+			sessionStorage.setItem("firstVisit", "yes");
+
+			sessionStorage.setItem(
+				"independentIECookieSettings",
+				JSON.stringify(cookiesSettings)
+			);
+			setFirstVisitState(true);
+			setOpenSettings(true);
+		}
 	}, []);
 
 	return (
 		<div className="IndependentIEIndexContainer">
+			<Helmet>
+				<title>Breaking News Ireland - Latest World News Headlines - ...</title>
+				<link rel="icon" href="./images/independent_ie_logo.svg" />
+			</Helmet>
+
 			{/* --------------------------------------------- */}
 			{/* ----------SETTINGS BUTTON------------------ */}
 			{/* --------------------------------------------- */}
@@ -125,19 +196,19 @@ const IndependentIEIndex = () => {
 					Privacy
 				</div>
 			</div>
-
 			{/* --------------------------------------------- */}
 			{/* ----------SETTINGS MODAL------------------ */}
 			{/* --------------------------------------------- */}
-
 			{openSettings && (
 				<SettingsModal
 					setOpenSettings={setOpenSettings}
 					setCookieDataDummyReRender={setCookieDataDummyReRender}
 					cookieDataDummyReRender={cookieDataDummyReRender}
+					firstVisitState={firstVisitState}
+					acceptOrRejectAllCookies={acceptOrRejectAllCookies}
+					setFirstVisitState={setFirstVisitState}
 				/>
 			)}
-
 			<div className="IndependentIE_Z_Index_100">
 				{/* --------------------------------------------- */}
 				{/* ----------Search bar------------------ */}
@@ -302,7 +373,6 @@ const IndependentIEIndex = () => {
 			{/* --------------------------------------------- */}
 			{/* ----------Nav Bar------------------ */}
 			{/* --------------------------------------------- */}
-
 			<NavBar data={allSectionsAndSubSections} />
 			{/* --------------------------------------------- */}
 			{/* ----------TwoPicsAnd4SmallBoxesComponent Section ------------------ */}
@@ -441,15 +511,12 @@ const IndependentIEIndex = () => {
 			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
 			<div className="IndependentIEIndexContainer_SectionSeparator"></div>
 			<SearchSiteFooter />
-
 			<div className="IndependentIE_FooterHolder">
 				<div className="IndependentIE_MainContentContainer">
 					<Footer />
 				</div>
 			</div>
-
 			<div className="IndependentIE_FooterEnder"></div>
-
 			<SiteMap data={siteMapData} />
 		</div>
 	);

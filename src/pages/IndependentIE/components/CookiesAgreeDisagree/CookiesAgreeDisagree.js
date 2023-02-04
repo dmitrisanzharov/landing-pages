@@ -4,21 +4,19 @@ import classNames from "classnames";
 
 const CookiesAgreeDisagree = ({
 	setCookieDataDummyReRender,
-	data,
 	cookieDataDummyReRender,
+	data,
 	index,
 }) => {
 	// props and other
 	const { heading, concent, info, tooltip, extraItems, items } = data;
-	// console.log(tooltip);
+	//
 
 	// functions
 	function handleInfoDropDown(itemToDropDown) {
 		let finalObj = JSON.parse(
 			sessionStorage.getItem("independentIECookieSettings")
 		);
-
-		// console.log(finalObj);
 
 		if (itemToDropDown === "info") {
 			finalObj[index].info.show = !finalObj[index].info.show;
@@ -40,8 +38,23 @@ const CookiesAgreeDisagree = ({
 			sessionStorage.getItem("independentIECookieSettings")
 		);
 
-		// console.log(finalObj);
+		//
 		finalObj[index].concent = decision;
+
+		// handle here all extra Items
+		if (finalObj[index].extraItems) {
+			let mutatedItems = finalObj[index].items.map((el) => {
+				if (el.legitimateInterestConcent_ExtItm.show) {
+					el.legitimateInterestConcent_ExtItm.consent = decision;
+				}
+
+				return { ...el, consentExtItm: decision };
+			});
+
+			finalObj[index].items = mutatedItems;
+
+			// end of the if statement
+		}
 
 		sessionStorage.setItem(
 			"independentIECookieSettings",
@@ -76,8 +89,6 @@ const CookiesAgreeDisagree = ({
 			sessionStorage.getItem("independentIECookieSettings")
 		);
 
-		// console.log(finalObj[index].items[index2].legitimateInterestConcent_ExtItm);
-
 		if (itemName === "consent") {
 			finalObj[index].items[index2].consentExtItm = decision;
 		}
@@ -91,8 +102,64 @@ const CookiesAgreeDisagree = ({
 			"independentIECookieSettings",
 			JSON.stringify(finalObj)
 		);
+
+		testIfAllAreAgreed();
+
 		setCookieDataDummyReRender(cookieDataDummyReRender + 1);
 	}
+
+	function testIfAllAreAgreed() {
+		let finalObj = JSON.parse(
+			sessionStorage.getItem("independentIECookieSettings")
+		);
+
+		// test if all are agreed
+		const testAllAgreed = finalObj[index].items.every(
+			(el) => el.consentExtItm === true
+		);
+		//
+
+		if (testAllAgreed) {
+			finalObj[index].concent = true;
+			sessionStorage.setItem(
+				"independentIECookieSettings",
+				JSON.stringify(finalObj)
+			);
+			return;
+		}
+
+		// test if all are disagreed
+		const testAllDisagree = finalObj[index].items.every(
+			(el) => el.consentExtItm === false
+		);
+		//
+
+		if (testAllDisagree) {
+			finalObj[index].concent = false;
+			sessionStorage.setItem(
+				"independentIECookieSettings",
+				JSON.stringify(finalObj)
+			);
+			return;
+		}
+
+		// if SOME are diagree
+		const testSomeAreDisagree = finalObj[index].items.some(
+			(el) => el.consentExtItm === false
+		);
+
+		if (testSomeAreDisagree) {
+			finalObj[index].concent = null;
+			sessionStorage.setItem(
+				"independentIECookieSettings",
+				JSON.stringify(finalObj)
+			);
+		}
+	}
+
+	//********************************************************************
+	//         USE EFFECTS
+	// *******************************************************************
 
 	//********************************************************************
 	//          COMPONENT ONE: NO EXTRA ITEMS
@@ -148,16 +215,19 @@ const CookiesAgreeDisagree = ({
 							{info.text}
 						</span>{" "}
 						{tooltip && (
-							<button
-								className="IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoIcon"
+							<div
 								onClick={() => handleInfoDropDown("tooltip")}
+								tabIndex="1"
+								className="IndependentIE_CookiesModal_DropDownFix_1675391910"
 							>
-								ⓘ
-							</button>
+								<button className="IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_InfoIcon">
+									ⓘ
+								</button>
+								<div className="IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText">
+									{tooltip?.text}
+								</div>
+							</div>
 						)}
-						<div className="IndependentIE_CookiesAgreeDisagreeComponent_TextAndButtonsBox_Dropdown_ToolTipText">
-							{tooltip?.text}
-						</div>
 					</div>
 
 					{/* BOX3: agree and disagree buttons */}
@@ -348,12 +418,18 @@ const CookiesAgreeDisagree = ({
 												{/* info box */}
 												<div className="IndependentIE_SingleItemContainer_DropOutContainer_InfoBox ">
 													<span>{info_ExtItm?.text}</span>
-													<button className="IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon">
-														ⓘ
-													</button>
-													{/* tooltip box */}
-													<div className="IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox">
-														{tooltip_ExtItm?.text}
+													<div
+														className="IndependentIE_CookiesModal_DropDownFix_1675391910"
+														tabIndex="1"
+													>
+														<button className="IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_InfoIcon">
+															ⓘ
+														</button>
+														{/* tooltip box */}
+
+														<div className="IndependentIE_SingleItemContainer_DropOutContainer_InfoBox_ToolTipBox">
+															{tooltip_ExtItm?.text}
+														</div>
 													</div>
 												</div>
 
