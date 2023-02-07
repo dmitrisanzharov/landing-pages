@@ -76,7 +76,7 @@ const IndependentIEIndex = () => {
 
 			return { ...el, concent: decision };
 		});
-		console.log("finalData: ", finalData);
+		// console.log("finalData: ", finalData);
 		sessionStorage.setItem(
 			"independentIECookieSettings",
 			JSON.stringify(finalData)

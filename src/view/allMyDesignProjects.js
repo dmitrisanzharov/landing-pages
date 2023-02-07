@@ -22,7 +22,7 @@ const allMyDesignProjects = [
 		],
 		pagePerformance: [
 			"page loads 113% faster",
-			"Lighthouse performance is up by 39%",
+			"Lighthouse performance is up by 80%",
 			"Lighthouse accessibility is up by 10%",
 			"Lighthouse best practices are up by 11%",
 			"Lighthouse seo is up by 9%",
