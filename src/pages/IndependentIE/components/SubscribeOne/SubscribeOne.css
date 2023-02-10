@@ -82,7 +82,6 @@
 @media all and (max-width: 719px) {
   .IndependentIE_SubscribeOneSection {
     flex-direction: column;
-    max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
     max-height: fit-content;
     row-gap: 20px;

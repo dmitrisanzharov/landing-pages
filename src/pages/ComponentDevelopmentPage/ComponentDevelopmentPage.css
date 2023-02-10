@@ -6,19 +6,11 @@
   color: red;
 }
 
-.BlahDiv > input:-ms-input-placeholder {
-  color: red;
-}
-
 .BlahDiv > input::placeholder {
   color: red;
 }
 
 .BlahDiv > input:focus::-moz-placeholder {
-  color: green;
-}
-
-.BlahDiv > input:focus:-ms-input-placeholder {
   color: green;
 }
 

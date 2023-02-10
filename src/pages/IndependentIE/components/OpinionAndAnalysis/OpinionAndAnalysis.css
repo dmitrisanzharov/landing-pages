@@ -42,7 +42,6 @@
   .IndependentIE_OpinionAndAnalysis_SingleItem_ImgBox {
     max-width: 25%;
     min-width: 25%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }

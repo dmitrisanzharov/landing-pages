@@ -89,8 +89,7 @@
   line-height: 40px;
   font-weight: 500;
   text-decoration: underline;
-  -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
+  text-decoration-color: transparent;
   transition: 0.5s;
 }
 
@@ -99,8 +98,7 @@
   line-height: 26px;
   font-weight: 500;
   text-decoration: underline;
-  -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
+  text-decoration-color: transparent;
   transition: 0.5s;
   cursor: pointer;
 }

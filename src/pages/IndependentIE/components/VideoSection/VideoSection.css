@@ -69,8 +69,7 @@
   line-height: 23px;
   font-weight: 700;
   text-decoration: underline;
-  -webkit-text-decoration-color: transparent;
-          text-decoration-color: transparent;
+  text-decoration-color: transparent;
   transition: 0.5s;
   color: white;
 }
@@ -85,7 +84,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
     max-height: fit-content;
     overflow-y: auto;
@@ -100,7 +98,6 @@
     align-content: start;
   }
   .IndependentIE_VideoSection_Container_SmallBox_SingleItem_Img {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }

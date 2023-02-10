@@ -36,7 +36,6 @@
   .IndependentIE_TwoBySixSection_SingleItem_ImgHolder {
     max-width: 25%;
     min-width: 25%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }

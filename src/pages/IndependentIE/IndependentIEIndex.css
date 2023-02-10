@@ -85,22 +85,11 @@
   color: gray;
 }
 
-.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox > input:focus:-ms-input-placeholder {
-  color: gray;
-}
-
 .IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox > input:focus::placeholder {
   color: gray;
 }
 
 .IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox > input::-moz-placeholder {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: bold;
-  color: black;
-}
-
-.IndependentIEIndexContainer_SearchBarSection_Container_SearchBarBox_InputBox > input:-ms-input-placeholder {
   font-size: 14px;
   line-height: 20px;
   font-weight: bold;
@@ -243,7 +232,6 @@
   }
 }
 .IndependentIEIndexContainer_NavBar {
-  max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: auto;
@@ -329,12 +317,6 @@
   font-weight: 700;
 }
 
-.IndependentIEIndexContainer_NavBar_SearchBox_Input > input:-ms-input-placeholder {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-}
-
 .IndependentIEIndexContainer_NavBar_SearchBox_Input > input::placeholder {
   font-size: 18px;
   line-height: 18px;
@@ -343,7 +325,6 @@
 
 @media all and (max-width: 768px) {
   .IndependentIEIndexContainer_NavBar {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }

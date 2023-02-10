@@ -187,7 +187,6 @@
 }
 
 .IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll, .IndependentIE_SettingsModal_MainBox_Footer_Button--AgreeToAll--Disagree {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding-left: 25px;

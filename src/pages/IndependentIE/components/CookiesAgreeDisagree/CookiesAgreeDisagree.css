@@ -40,7 +40,6 @@
   outline: none;
   background-color: white;
   border-radius: 5px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: auto;
@@ -177,7 +176,6 @@
 }
 .IndependentIE_CookiesAgreeDisagreeComponent_ExtraItemsFullComponent .InnerWholeWrapper .DropOutExtraItemsMainWrapper--Open {
   transform: scaleY(1);
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 10px 5px 10px 10px;
@@ -207,7 +205,6 @@
 
 .IndependentIE_SingleItemContainer_DropOutContainer--Open {
   transform: scaleY(1);
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
