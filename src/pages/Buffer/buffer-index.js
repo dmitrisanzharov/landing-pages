@@ -16,7 +16,7 @@ import lrg1234_img from "./images/1234_image_lrg.png";
 import bufferTeamMapImage from "./images/bufferTeamMapImage.png";
 import linkedInPartnerLogo from "./images/linkedin-marketing-partner@2x-2.png";
 import metaPartnerLogo from "./images/meta-business-partner@2x-2.png";
-import pinPratnerLogo from "./images/pinterest-marketing-partner@2x-2.png";
+import pinPartnerLogo from "./images/pinterest-marketing-partner@2x-2.png";
 import semiBlueFooterImageLeft from "./images/semiBlueFooterImageLeft.png";
 import semiBlueFooterImageRight from "./images/semiBlueFooterImageRight.png";
 import bufferFooterLogo from "./images/bufferFooterLogo.png";
@@ -61,7 +61,19 @@ const Buffer = () => {
 		[]
 	);
 
+	const scrollIntoView = useCallback(() => {
+		let timeOut = setTimeout(() => {
+			window.scrollTo(0, scrollState.lastY);
+		}, 0);
+
+		return () => clearTimeout(timeOut);
+	}, [scrollState.lastY]);
+
 	// useEffects
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -98,14 +110,6 @@ const Buffer = () => {
 
 		setHideNavBar(false);
 	}, [scrollState]);
-
-	const scrollIntoView = useCallback(() => {
-		let timeOut = setTimeout(() => {
-			window.scrollTo(0, scrollState.lastY);
-		}, 0);
-
-		return () => clearTimeout(timeOut);
-	}, [scrollState.lastY]);
 
 	return (
 		<div
@@ -466,7 +470,7 @@ const Buffer = () => {
 						</div>
 
 						<div className="BufferIndex_MarketingPartnersSection_InnerContainer_LogosContainer_PartnersLogo ">
-							<img src={pinPratnerLogo} alt="pin interest" width={112} />
+							<img src={pinPartnerLogo} alt="pin interest" width={112} />
 						</div>
 
 						<div className="BufferIndex_MarketingPartnersSection_InnerContainer_LogosContainer_LinkedInLogo ">
