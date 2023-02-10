@@ -333,7 +333,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 184px;
+  min-width: 186px !important;
 }
 
 .Buffer_index_happy_container_inner_box1_text_mini_container_button_holder_white_button:hover {
