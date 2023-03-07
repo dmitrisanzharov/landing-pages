@@ -12,11 +12,19 @@ export default function Home() {
 			</Helmet>
 			<h1>Design</h1>
 			<div className="HomeContainer_Heading2">
-				<em>all are mobile optimised, count: {allMyDesignProjects.length}</em>
+				<em>
+					all are mobile optimised, but have LIMITED functionality, count:{" "}
+					{allMyDesignProjects.length}
+				</em>
 			</div>
-			<div>
-				<button>
-					<Link to="/component-development-page">Dev page</Link>
+			<div className="HomeContainer_ButtonsNavBar">
+				<button className="HomeContainer_Button85">
+					<Link to="/component-development-page">
+						Functional Websites (no design)
+					</Link>
+				</button>
+				<button className="HomeContainer_Button40">
+					<Link to="/component-development-page">dev page</Link>
 				</button>
 			</div>
 			{allMyDesignProjects &&

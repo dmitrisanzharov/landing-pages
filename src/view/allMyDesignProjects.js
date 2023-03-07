@@ -3,8 +3,34 @@ import wipsterBrotherPic from "../images/wipsterBrotherPic.avif";
 import stripePic from "../images/stripePic.avif";
 import finLendersPic from "../images/finLendersPic.avif";
 import indepenedentIE from "../images/independent_ie.webp";
+import mercedesBenzIoThumbnail from "../images/mercedesBenzIoThumbnail.png";
 
 const allMyDesignProjects = [
+	{
+		name: "Mercedes-benz.io",
+		link: "https://mercedes-benz-io-ts-prod.netlify.app/",
+		standAloneUrl: true,
+		image: mercedesBenzIoThumbnail,
+		dateStarted: "03-Feb-2023",
+		dateFinished: "02-Mar-2023",
+		numberOfActivePages: 1,
+		highlights: [
+			"HUGE: Carousel was GOAT project as of today - also works on mobile with Touches",
+			"Carousel text animation, 50% scroll condition - where it only moves if they click and drag more than 50%",
+			"styled scroll bar",
+			"Navbar items stick when clicked, ACTIVE mode",
+			"When scroll to TOP of the page Navbar rolls out",
+			"Prevent BOLD text from stretching the container",
+			"Website transitions happen only 1 time, i.e. it remembers the session",
+			"When scrolling to pictures they Zoom in, ones I reach certain level",
+		],
+		pagePerformance: [
+			"Lighthouse performance is up by 3%",
+			"Lighthouse accessibility is up by 22%",
+			"Lighthouse best practices are up by 9%",
+			"Lighthouse seo is up by 25%",
+		],
+	},
 	{
 		name: "Independent.ie",
 		link: "/independent-ie",
