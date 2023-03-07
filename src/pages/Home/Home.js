@@ -19,9 +19,7 @@ export default function Home() {
 			</div>
 			<div className="HomeContainer_ButtonsNavBar">
 				<button className="HomeContainer_Button85">
-					<Link to="/component-development-page">
-						Functional Websites (no design)
-					</Link>
+					<Link to="/functionality-pages">Functional Websites (no design)</Link>
 				</button>
 				<button className="HomeContainer_Button40">
 					<Link to="/component-development-page">dev page</Link>
