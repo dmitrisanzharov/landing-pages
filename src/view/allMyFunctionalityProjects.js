@@ -14,6 +14,7 @@ const allMyFunctionalityProjects = [
 			"view transactions report",
 		],
 		highlights: [
+			"registration page button is NOT clickable till all fields are correct",
 			"sends EMAILS to reset password - 2 emails, 1 to reset, 2 to confirm the token",
 			"pop-up notifications when user does something, e.g. lodge money",
 			"JWT for secure routes, checks token",
