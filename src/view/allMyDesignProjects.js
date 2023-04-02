@@ -53,6 +53,7 @@ const allMyDesignProjects = [
 			"Lighthouse best practices are up by 11%",
 			"Lighthouse seo is up by 9%",
 		],
+		toDo: ["Cookies Modal AND bottom right button need to be MOBILE OPTIMISED"],
 	},
 	{
 		name: "Buffer",

@@ -36,6 +36,7 @@ export default function Home() {
 						standAloneUrl,
 						warnings,
 						pagePerformance,
+						toDo,
 					} = el;
 					return (
 						<div key={new Date().getTime().toString() + name}>
@@ -117,6 +118,21 @@ export default function Home() {
 													{pagePerformance.map((el, i) => {
 														return (
 															<li key={new Date().getTime().toString() + el}>
+																{el}
+															</li>
+														);
+													})}
+												</ul>
+											</li>
+										)}
+										{toDo && (
+											<li>
+												<b style={{ color: "red" }}>ToDo for later: </b>
+												<ul>
+													{toDo.map((el) => {
+														return (
+															<li key={el}>
+																<input type="checkbox" />
 																{el}
 															</li>
 														);
